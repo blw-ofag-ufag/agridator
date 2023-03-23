@@ -30,7 +30,6 @@ using (var scope = app.Services.CreateScope())
         if (context?.Database.GetPendingMigrations().Any() ?? false)
         {
             context.Database.EnsureCreated();
-            //context.Database.Migrate();
         }
     }
     catch (Exception ex)
