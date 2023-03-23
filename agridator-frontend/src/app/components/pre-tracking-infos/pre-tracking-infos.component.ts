@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormArray, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { DataService } from './../../service/data.service';
 
 @Component({
@@ -13,7 +14,9 @@ export class PreTrackingInfosComponent implements OnInit {
   allowedActionTypes : any[] = [];
   form: FormGroup = new FormGroup({});
 
-  constructor(private dataService: DataService, private fb: FormBuilder) {
+  constructor(private dataService: DataService,
+              private fb: FormBuilder,
+              private router: Router) {
     this.allowedActionTypes = this.dataService.getActionTypes();
     this.ownedFields = this.dataService.getOwnedFields();
   }
@@ -34,7 +37,7 @@ export class PreTrackingInfosComponent implements OnInit {
     const actionForm = this.fb.group({
         actionType: ['', Validators.required]
     });
-  
+
     this.actions.push(actionForm);
   }
 
@@ -46,5 +49,9 @@ export class PreTrackingInfosComponent implements OnInit {
     return (control:AbstractControl) : ValidationErrors | null => {
       return (control as FormArray).controls.length == 0 ?  {noAction: control.value} : null;
     }
+  }
+
+  onSubmit(form: FormGroup) {
+    this.router.navigate(['tracking']);
   }
 }
