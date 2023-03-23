@@ -13,10 +13,9 @@ export class AppComponent  {
 
 
     constructor(private dataService: DataService, private translate: TranslateService) {
-		this.actions = this.dataService.getActions();
-		translate.setDefaultLang('de');
-		translate.use('de'); 
-	}
+      translate.setDefaultLang('de');
+      translate.use('de'); 
+	  }
 
 
   useLanguage(language: string): void {

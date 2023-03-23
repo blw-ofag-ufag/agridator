@@ -59,7 +59,7 @@ const routes: Routes = [
     MatButtonModule,
     HttpClientModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
