@@ -20,16 +20,32 @@ import { PostTrackingInfosComponent } from './components/post-tracking-infos/pos
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FormGroup, FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { FeldkalenderComponent } from './components/feldkalender/feldkalender.component';
+
+const routes: Routes = [
+  {path: 'pre-tracking-infos', component: PreTrackingInfosComponent},
+  {path: 'tracking', component: TrackingComponent},
+  {path: 'post-tracking-infos', component: PostTrackingInfosComponent},
+  {path: 'feldkalender', component: FeldkalenderComponent},
+  {path: '**', pathMatch: 'full', redirectTo: 'pre-tracking-infos'}
+]
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PreTrackingInfosComponent,
     TrackingComponent,
-    PostTrackingInfosComponent
+    PostTrackingInfosComponent,
+    FeldkalenderComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes, {useHash: true}),
     BrowserAnimationsModule,
     MatTableModule,
     MatSortModule,
@@ -43,6 +59,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     HttpClientModule,
     MatCardModule,
+    ReactiveFormsModule
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
@@ -52,7 +69,6 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
   })
 ],
 exports: [
-
     MatTableModule,
     MatSortModule,
     MatFormFieldModule,
@@ -63,7 +79,8 @@ exports: [
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule
 ],
   providers: [ HttpClientModule],
   bootstrap: [AppComponent]

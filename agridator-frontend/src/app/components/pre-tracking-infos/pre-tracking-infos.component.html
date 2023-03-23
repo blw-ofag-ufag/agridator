@@ -1,2 +1,37 @@
-<p>pre-tracking-infos works!</p>
+
 <!-- <p>{{'pre-tracking.WelcomeText' | translate}} </p> -->
+
+<style>
+    .container form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <div class="container">
+      <form [formGroup]="form">
+        <mat-form-field appearance="fill" hintLabel="Feld auswählen">
+          <mat-label>Feld</mat-label>
+          <mat-select matNativeControl name="field" formControlName="field">
+            <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <ng-container formArrayName="actions">
+          <ng-container *ngFor="let actionForm of actions.controls; let i = index">
+            <div class="action-form-row" [formGroupName]="i">
+              <mat-form-field appearance="fill">
+                <mat-select formControlName="actionType" placeholder="Aktionstyp">
+                  <mat-option [value]="item.key" *ngFor="let item of allowedActionTypes">{{item.value}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-icon class="delete-btn" (click)="deleteAction(i)">delete_forever</mat-icon>
+            </div>
+          </ng-container>
+        </ng-container>
+  
+        <button mat-raised-button color="primary" type="button" (click)="addAction()">Hinzufügen</button> &nbsp;
+        <div mat-dialog-actions align="end">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
+        </div>
+      </form>
+  </div>
+
