@@ -2,7 +2,7 @@
 
 namespace Agridator.Web.Data.Entities
 {
-    public class UsageTypes
+    public class UsageType
     {
         [JsonProperty("ID")]
         public Guid Id { get; set; }
@@ -10,14 +10,7 @@ namespace Agridator.Web.Data.Entities
         [JsonProperty("LNF_Code")]
         public int Code { get; set; }
 
-        [JsonProperty("Nutzung_DE")]
-        public string Nutzung_de { get; set; } = string.Empty;
-
-        [JsonProperty("Nutzung_FR")]
-        public string Nutzung_fr { get; set; } = string.Empty;
-
-        [JsonProperty("Nutzung_IT")]
-        public string Nutzung_it { get; set; } = string.Empty;
+        public LocalizedStringSet Nutzung { get; set; } = new LocalizedStringSet();
 
         [JsonProperty("Gueltig_Von")]
         public int ValidFromYear { get; set; }
