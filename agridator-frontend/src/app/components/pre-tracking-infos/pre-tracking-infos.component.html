@@ -1,33 +1,51 @@
-<style>
-    .container form {
-      display: flex;
-      flex-direction: column;
-    }
-  </style>
-  <div class="container">
-      <form [formGroup]="form">
-        <mat-form-field appearance="fill" hintLabel="Feld auswählen">
-          <mat-label>Feld</mat-label>
-          <mat-select matNativeControl name="field" formControlName="field">
-            <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <ng-container formArrayName="actions">
-          <ng-container *ngFor="let actionForm of actions.controls; let i = index">
-            <div class="action-form-row" [formGroupName]="i">
-              <mat-form-field appearance="fill">
-                <mat-select formControlName="actionType" placeholder="Aktionstyp">
-                  <mat-option [value]="item.key" *ngFor="let item of allowedActionTypes">{{item.value}}</mat-option>
-                </mat-select>
-              </mat-form-field>
-              <mat-icon class="delete-btn" (click)="deleteAction(i)">delete_forever</mat-icon>
-            </div>
-          </ng-container>
-        </ng-container>
-  
-        <button mat-raised-button color="primary" type="button" (click)="addAction()">Hinzufügen</button> &nbsp;
-        <div mat-dialog-actions align="end">
-          <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
-        </div>
-      </form>
+<form [formGroup]="form">
+  <div>
+    <h1>Select Field</h1>
   </div>
+  <div>
+    <mat-form-field appearance="fill" hintLabel="Feld auswählen" fxFlex="100">
+      <mat-label>Feld</mat-label>
+      <mat-select matNativeControl name="field" formControlName="field">
+        <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    &nbsp;
+  </div>
+  <div>
+    <h1>Select type of work</h1>
+  </div>
+  <div>
+    <ng-container formArrayName="actions">
+      <ng-container *ngFor="let actionForm of actions.controls; let i = index">
+        <div class="action-form-row" [formGroupName]="i">
+          <mat-form-field appearance="fill">
+            <mat-select formControlName="actionType" placeholder="Aktionstyp">
+              <mat-option [value]="item.key" *ngFor="let item of allowedActionTypes">{{item.value}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-icon class="delete-btn" (click)="deleteAction(i)">delete_forever</mat-icon>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div>
+    <button fxFlex="100" mat-raised-button color="primary" type="button" (click)="addAction()">Hinzufügen</button>
+  </div>
+  <div>
+    &nbsp;
+  </div>
+  <div>
+    <h1>Select dependent object</h1>
+  </div>
+  <div>
+    &nbsp;
+  </div>
+  <div fxLayoutAlign="space-between">
+    <div></div>
+    <div>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
+    </div>
+  </div>
+</form>
