@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  FormBuilder } from '@angular/forms';
 import { DataService } from './service/data.service';
 
 @Component({
@@ -6,12 +7,11 @@ import { DataService } from './service/data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'Agridator';
-  actions : string[] = [];
 
-  constructor(private dataService: DataService) {
-    this.actions = this.dataService.getActions();
+  constructor(private dataService: DataService, private fb: FormBuilder) {
+
   }
 
 }
