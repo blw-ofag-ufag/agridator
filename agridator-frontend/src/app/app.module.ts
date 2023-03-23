@@ -18,11 +18,13 @@ import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-t
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FeldkalenderComponent } from './components/feldkalender/feldkalender.component';
 
 const routes: Routes = [
   {path: 'pre-tracking-infos', component: PreTrackingInfosComponent},
   {path: 'tracking', component: TrackingComponent},
   {path: 'post-tracking-infos', component: PostTrackingInfosComponent},
+  {path: 'feldkalender', component: FeldkalenderComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'pre-tracking-infos'}
 ]
 
@@ -31,7 +33,8 @@ const routes: Routes = [
     AppComponent,
     PreTrackingInfosComponent,
     TrackingComponent,
-    PostTrackingInfosComponent
+    PostTrackingInfosComponent,
+    FeldkalenderComponent
   ],
   imports: [
     BrowserModule,
