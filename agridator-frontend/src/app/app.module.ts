@@ -19,17 +19,29 @@ import { TrackingComponent } from './components/tracking/tracking.component';
 import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
 import { FormGroup, FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { FeldkalenderComponent } from './components/feldkalender/feldkalender.component';
+
+const routes: Routes = [
+  {path: 'pre-tracking-infos', component: PreTrackingInfosComponent},
+  {path: 'tracking', component: TrackingComponent},
+  {path: 'post-tracking-infos', component: PostTrackingInfosComponent},
+  {path: 'feldkalender', component: FeldkalenderComponent},
+  {path: '**', pathMatch: 'full', redirectTo: 'pre-tracking-infos'}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     PreTrackingInfosComponent,
     TrackingComponent,
-    PostTrackingInfosComponent
+    PostTrackingInfosComponent,
+    FeldkalenderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot(routes, {useHash: true}),
     BrowserAnimationsModule,
     MatTableModule,
     MatSortModule,
@@ -45,7 +57,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
 ],
 exports: [
-
     MatTableModule,
     MatSortModule,
     MatFormFieldModule,
@@ -56,7 +67,8 @@ exports: [
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule
 ],
   providers: [],
   bootstrap: [AppComponent]
