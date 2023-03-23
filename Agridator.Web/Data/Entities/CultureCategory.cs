@@ -2,14 +2,13 @@
 
 namespace Agridator.Web.Data.Entities
 {
-    public class Fertilizer
+    public class CultureCategory
     {
-        [JsonProperty("DWH_SK")]
+        [JsonProperty(nameof(Id))]
         public int Id { get; set; }
 
         public LocalizedStringSet Description { get; set; } = new LocalizedStringSet();
 
-        [JsonProperty("PST_STATUS")]
-        public string Status { get; set; } = string.Empty;
+        public virtual List<Culture> Cultures { get; set; } = new List<Culture>();
     }
 }
