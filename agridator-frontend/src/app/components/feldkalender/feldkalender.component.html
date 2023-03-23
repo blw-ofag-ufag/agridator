@@ -1,7 +1,5 @@
 <h1>Feldkalender</h1>
 
-<div *ngIf="feldkalender">
-    <div *ngFor="let feldkalenderItem in feldkalender">
-        {{feldkalenderItem}}
-    </div>
+<div *ngFor="let feldkalenderItem of feldkalenderArray">
+    {{feldkalenderItem}}
 </div>

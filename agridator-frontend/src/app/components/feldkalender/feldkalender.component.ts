@@ -8,11 +8,11 @@ import { LocalStorageService } from 'src/app/service/local-storage.service';
 })
 export class FeldkalenderComponent implements OnInit {
 
-  feldkalender?: string[];
+  feldkalenderArray?: string[];
 
   constructor(private localStorageService: LocalStorageService) {}
 
   ngOnInit(): void {
-    this.feldkalender = this.localStorageService.getFeldkalender();
+    this.feldkalenderArray = this.localStorageService.getFeldkalender();
   }
 }
