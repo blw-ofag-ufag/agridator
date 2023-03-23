@@ -14,10 +14,16 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-tracking-infos.component';
+import { TrackingComponent } from './components/tracking/tracking.component';
+import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreTrackingInfosComponent,
+    TrackingComponent,
+    PostTrackingInfosComponent
   ],
   imports: [
     BrowserModule,
