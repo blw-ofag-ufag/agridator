@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './service/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'agridator-frontend';
+  title = 'Agridator';
+  actions : string[] = [];
+
+  constructor(private dataService: DataService) {
+    this.actions = this.dataService.getActions();
+  }
+
 }
