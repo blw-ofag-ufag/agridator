@@ -17,6 +17,9 @@ import { MatCardModule } from '@angular/material/card';
 import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-tracking-infos.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,15 @@ import { PostTrackingInfosComponent } from './components/post-tracking-infos/pos
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
+    HttpClientModule,
     MatCardModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
 ],
 exports: [
 
@@ -54,7 +65,13 @@ exports: [
     MatButtonModule,
     MatCardModule
 ],
-  providers: [],
+  providers: [ HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}
+ 

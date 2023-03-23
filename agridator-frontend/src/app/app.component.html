@@ -301,10 +301,14 @@
     }
   }
 </style>
+<button (click)="useLanguage('de')">de</button>
+<button (click)="useLanguage('it')">it</button>
+<button (click)="useLanguage('fr')">fr</button>
 <div>
   <mat-card>
      Hello
-  </mat-card>
-  {{ actions[0] }} 
+    </mat-card>
+      {{ actions[0] }} 
 </div>
 
+ <p>{{'pre-tracking.WelcomeText' | translate}} </p> 
