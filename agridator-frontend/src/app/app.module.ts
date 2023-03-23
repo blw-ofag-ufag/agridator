@@ -21,12 +21,15 @@ import { FormGroup, FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FeldkalenderComponent } from './components/feldkalender/feldkalender.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SettingsComponent } from './components/settings/settings.component';
 
 const routes: Routes = [
   {path: 'pre-tracking-infos', component: PreTrackingInfosComponent},
   {path: 'tracking', component: TrackingComponent},
   {path: 'post-tracking-infos', component: PostTrackingInfosComponent},
   {path: 'feldkalender', component: FeldkalenderComponent},
+  {path: 'settings', component: SettingsComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'pre-tracking-infos'}
 ]
 
@@ -36,7 +39,8 @@ const routes: Routes = [
     PreTrackingInfosComponent,
     TrackingComponent,
     PostTrackingInfosComponent,
-    FeldkalenderComponent
+    FeldkalenderComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,8 @@ const routes: Routes = [
     MatRadioModule,
     MatButtonModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
 ],
 exports: [
     MatTableModule,

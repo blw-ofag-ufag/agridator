@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {  FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
+import { Router, Routes } from '@angular/router';
 import { DataService } from './service/data.service';
 
 @Component({
@@ -10,8 +11,20 @@ import { DataService } from './service/data.service';
 export class AppComponent  {
   title = 'Agridator';
 
-  constructor(private dataService: DataService, private fb: FormBuilder) {
-
+  constructor(private dataService: DataService,
+              private fb: FormBuilder,
+              private router: Router) {
   }
 
+  home() {
+    this.router.navigate(['home']);
+  }
+
+  feldkalender() {
+    this.router.navigate(['feldkalender']);
+  }
+
+  settings() {
+    this.router.navigate(['settings']);
+  }
 }

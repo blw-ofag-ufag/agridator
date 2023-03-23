@@ -16,6 +16,6 @@ export class LocalStorageService {
     if (feldkalender) {
       return JSON.parse(feldkalender);
     }
-    return undefined;
+    return ['bla', 'bla', 'bla'];
   }
 }
