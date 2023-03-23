@@ -13,8 +13,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .mat-icon {
-  color: #7b9d78;
+  color: #61775e;
   width: 48px !important;
   height: 48px !important;
   font-size: 48px;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #61775e;
 }
