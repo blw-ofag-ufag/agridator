@@ -7,12 +7,22 @@ export class DataService {
 
   constructor() { }
 
-  getActions ()
+  getActionTypes ()
   {
     return [ 
-      "Aktion A",
-      "Aktion B",
-      "Aktion C",
+      {key:"keyA", value: "Aktion A"},
+      {key:"keyB", value: "Aktion B"},
+      {key:"keyC", value: "Aktion C"}
     ]
   };
+
+
+  getOwnedFields()
+  {
+    return [
+      {key:"keyX", value: "Feld X"},
+      {key:"keyY", value: "Feld Y"},
+      {key:"keyZ", value: "Feld Z"}
+    ]
+  }
 }

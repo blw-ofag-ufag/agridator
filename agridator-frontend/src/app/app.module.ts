@@ -17,6 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-tracking-infos.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
+import { FormGroup, FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { PostTrackingInfosComponent } from './components/post-tracking-infos/pos
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatTableModule,
     MatSortModule,
@@ -39,6 +42,7 @@ import { PostTrackingInfosComponent } from './components/post-tracking-infos/pos
     MatRadioModule,
     MatButtonModule,
     MatCardModule,
+    ReactiveFormsModule
 ],
 exports: [
 
