@@ -14,5 +14,5 @@ export class DataService {
       "Aktion B",
       "Aktion C",
     ]
-  }
+  };
 }
