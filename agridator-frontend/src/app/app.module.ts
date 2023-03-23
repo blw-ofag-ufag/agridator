@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-tracking-infos.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
@@ -57,6 +58,7 @@ const routes: Routes = [
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatCardModule,
     ReactiveFormsModule,
     FlexLayoutModule

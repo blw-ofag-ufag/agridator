@@ -5,29 +5,36 @@
     }
   </style>
   <div class="container">
-      <form [formGroup]="form">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <mat-form-field appearance="fill" hintLabel="Feld auswählen">
           <mat-label>Feld</mat-label>
           <mat-select matNativeControl name="field" formControlName="field">
             <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
           </mat-select>
         </mat-form-field>
-        <ng-container formArrayName="actions">
-          <ng-container *ngFor="let actionForm of actions.controls; let i = index">
-            <div class="action-form-row" [formGroupName]="i">
-              <mat-form-field appearance="fill">
-                <mat-select formControlName="actionType" placeholder="Aktionstyp">
-                  <mat-option [value]="item.key" *ngFor="let item of allowedActionTypes">{{item.value}}</mat-option>
-                </mat-select>
-              </mat-form-field>
-              <mat-icon class="delete-btn" (click)="deleteAction(i)">delete_forever</mat-icon>
-            </div>
-          </ng-container>
+        <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
+              <mat-checkbox [formControlName]="i"  [value]="workTypes[i].key" (change)="toggleAdditionalOptions($event)">{{workTypes[i].value}}</mat-checkbox>
         </ng-container>
-  
-        <button mat-raised-button color="primary" type="button" (click)="addAction()">Hinzufügen</button> &nbsp;
+
+        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
+          <mat-label>Düngemittel</mat-label>
+          <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
+            <mat-option [value]="item.key" *ngFor="let item of fertilizers">{{item.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
+          <mat-label>Pflanzenschutzmittel</mat-label>
+          <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
+            <mat-option [value]="item.key" *ngFor="let item of plantProtectionProducts">{{item.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
         <div mat-dialog-actions align="end">
           <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
         </div>
+
+        {{ form.controls }}
       </form>
   </div>
