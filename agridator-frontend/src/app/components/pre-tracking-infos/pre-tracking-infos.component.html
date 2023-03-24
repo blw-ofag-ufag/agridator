@@ -13,9 +13,24 @@
           </mat-select>
         </mat-form-field>
         <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
-              <mat-checkbox [formControlName]="i"  [value]="workTypes[i].key">{{workTypes[i].value}}</mat-checkbox>
+              <mat-checkbox [formControlName]="i"  (change)="toggleAdditionalOptions($event)" [value]="workTypes[i].key">{{workTypes[i].value}}</mat-checkbox>
         </ng-container>
   
+        
+        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
+          <mat-label>Düngemittel</mat-label>
+          <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
+            <mat-option [value]="item.key" *ngFor="let item of fertilizers">{{item.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
+          <mat-label>Pflanzenschutzmittel</mat-label>
+          <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
+            <mat-option [value]="item.key" *ngFor="let item of plantProtectionProducts">{{item.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
         <div mat-dialog-actions align="end">
           <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
         </div>
