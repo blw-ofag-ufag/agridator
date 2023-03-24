@@ -1,20 +1,26 @@
 [
   {
     "Id": 1,
-    "Title_de": "Kulturen",
-    "Title_fr": "Cultures",
-    "Title_it": "Colture"
-  },
+    "Title": {
+      "De": "Kulturen",
+      "Fr": "Cultures",
+      "It": "Colture"
+    }
+    },
   {
     "Id": 2,
-    "Title_de": "Dünger",
-    "Title_fr": "Engrais",
-    "Title_it": "Concimi"
-  },
+    "Title": {
+      "De": "DÃ¼nger",
+      "Fr": "Engrais",
+      "It": "Concimi"
+    }
+    },
   {
     "Id": 3,
-    "Title_de": "Pflanzenschutzmittel",
-    "Title_fr": "Produits phytosanitaires",
-    "Title_it": "Prodotti fitosanitari"
+    "Title": {
+      "De": "Pflanzenschutzmittel",
+      "Fr": "Produits phytosanitaires",
+      "It": "Prodotti fitosanitari"
+    }
   }
 ]

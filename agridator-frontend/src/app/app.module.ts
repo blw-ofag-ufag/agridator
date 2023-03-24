@@ -19,6 +19,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { PreTrackingInfosComponent } from './components/pre-tracking-infos/pre-tracking-infos.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PostTrackingInfosComponent } from './components/post-tracking-infos/post-tracking-infos.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormGroup, FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
@@ -34,6 +37,7 @@ const routes: Routes = [
   {path: 'settings', component: SettingsComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'pre-tracking-infos'}
 ]
+
 
 @NgModule({
   declarations: [
@@ -59,11 +63,19 @@ const routes: Routes = [
     MatSelectModule,
     MatRadioModule,
     MatButtonModule,
+    HttpClientModule,
     MatCheckboxModule,
-    MatCardModule,
     MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
 ],
 exports: [
     MatTableModule,
@@ -79,7 +91,13 @@ exports: [
     MatCardModule,
     RouterModule
 ],
-  providers: [],
+  providers: [ HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}
+ 

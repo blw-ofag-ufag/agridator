@@ -31,3 +31,7 @@ _ReSharper*/
 packages/
 .idea
 /Agridator.Web/ClientApp/
+/Agridator.Web/ClientApp/.angular/
+/Agridator.Web/main.db
+node_modules
+node_modules
