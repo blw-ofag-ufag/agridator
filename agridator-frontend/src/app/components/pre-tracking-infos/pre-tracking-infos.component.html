@@ -1,6 +1,3 @@
-
-<!-- <p>{{'pre-tracking.WelcomeText' | translate}} </p> -->
-
 <style>
     .container form {
       display: flex;
@@ -9,8 +6,8 @@
   </style>
   <div class="container">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <mat-form-field appearance="fill" hintLabel="Feld auswählen">
-          <mat-label>Feld</mat-label>
+        <mat-form-field appearance="fill" hintLabel="">
+          <mat-label>{{'pre-tracking.PlantsFields' | translate}}</mat-label>
           <mat-select matNativeControl name="field" formControlName="field">
             <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
           </mat-select>
@@ -20,15 +17,15 @@
         </ng-container>
   
         
-        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
-          <mat-label>Düngemittel</mat-label>
+        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="">
+          <mat-label>{{'pre-tracking.Fertilizer' | translate}}</mat-label>
           <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
             <mat-option [value]="item.key" *ngFor="let item of fertilizers">{{item.value}}</mat-option>
           </mat-select>
         </mat-form-field>
 
-        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
-          <mat-label>Pflanzenschutzmittel</mat-label>
+        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="">
+          <mat-label>{{'pre-tracking.PlantProtection' | translate}}</mat-label>
           <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
             <mat-option [value]="item.key" *ngFor="let item of plantProtectionProducts">{{item.value}}</mat-option>
           </mat-select>

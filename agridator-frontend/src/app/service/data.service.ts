@@ -1,19 +1,29 @@
 import { Injectable } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService) {
+      translate.setDefaultLang('de');
+      translate.use('de'); 
+}
+
+useLanguage(language: string): void {
+  this.translate.use(language); 
+  }
 
   // keys are used to determine additional lists in pre-trakcing-infos
   getActionTypes ()
   {
     return [ 
-      {key:"keyA", value: "Düngen"},
-      {key:"keyB", value: "Sprühen"},
-      {key:"keyC", value: "Aktion C"}
+      {key:"keyA", value: "Dünger - Engrais - Concimi"},
+      {key:"keyB", value: "Pflanzenschutzmittel - Produits phytosanitaires - Prodotti fitosanitari"},
+      {key:"keyC", value: "Action C"}
     ]
   };
 
@@ -40,10 +50,10 @@ export class DataService {
   getPlantProtectionProducts()
   {
     return [
-      {key:"keyPPPA", value:"Pflanzenschutzproduct A"},
-      {key:"keyPPPB", value:"Pflanzenschutzproduct B"},
-      {key:"keyPPPC", value:"Pflanzenschutzproduct C"},
-      {key:"keyPPPD", value:"Pflanzenschutzproduct D"},
+      {key:"keyPPPA", value:"Pflanzenschutzmittel A"},
+      {key:"keyPPPB", value:"Pflanzenschutzmittel B"},
+      {key:"keyPPPC", value:"Pflanzenschutzmittel C"},
+      {key:"keyPPPD", value:"Pflanzenschutzmittel D"},
     ]
   }
 }

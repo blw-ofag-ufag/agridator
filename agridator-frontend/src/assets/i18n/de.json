@@ -1,10 +1,14 @@
 {
-	"post-tracking": "",
+	"feldkalender.Title": "Feldkalender",
+	"pre-tracking.FeldAuswaehlen": "Feld auswählen",
 	"pre-tracking.Fertilizer": "Dünger",
+	"pre-tracking.MockWorktypeDuengen": "Dünger sprühen",
 	"pre-tracking.PlantProtection": "Pflanzenschutzmittel",
 	"pre-tracking.Plants": "Kulturen",
+	"pre-tracking.PlantsFields": "Feld",
 	"pre-tracking.Sprache": "DE",
 	"pre-tracking.WelcomeText": "Irgend ein Starttext / Titel, mehrsprachig.",
 	"pre-tracking.Worktype": "Feldarbeitstyp",
+	"settings.Title": "Einstellungen",
 	"tracking": ""
 }

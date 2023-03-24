@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DataService } from './../../service/data.service';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -18,12 +19,16 @@ export class PreTrackingInfosComponent implements OnInit {
   plantProtectionProducts: any[] = [];
   form: FormGroup = new FormGroup({});
 
-  constructor(private dataService: DataService, private fb: FormBuilder, private router: Router) {
+  constructor(private dataService: DataService, private fb: FormBuilder, private router: Router, private translate: TranslateService) {
     this.workTypes = this.dataService.getActionTypes();
     this.ownedFields = this.dataService.getOwnedFields();
     this.fertilizers = this.dataService.getFertilizier();
     this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
   }
+
+useLanguage(language: string): void {
+this.translate.use(language); 
+}
 
   ngOnInit(): void {
     this.form = this.fb.group({
