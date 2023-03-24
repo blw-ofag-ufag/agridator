@@ -16,7 +16,8 @@ mat-divider {
     display: flex;
     width: 100%;
     padding-top: 15px;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .field-header 

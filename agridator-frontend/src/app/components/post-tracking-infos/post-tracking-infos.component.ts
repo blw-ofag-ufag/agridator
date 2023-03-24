@@ -78,6 +78,10 @@ export class PostTrackingInfosComponent  {
     flightPath.setMap(map);
   }
 
+  discardTrack()
+  {
+    this.router.navigate(["pre-tracking-infos"]);
+  }
 
   calculateCenter(points :any[])
   {
@@ -151,11 +155,6 @@ export class PostTrackingInfosComponent  {
     return this.dataService.getPlantProtectionProducts().find(o => o.id == key);
   }
 
-  getCultureByKey(key:any)
-  {
-    return this.dataService.getCultures().find(o => o.id == key);
-  }
-
   getWorkByKey(key:any)
   {
     return this.dataService.getTypeOfWork().find(o => o.id == key);
@@ -163,7 +162,13 @@ export class PostTrackingInfosComponent  {
 
   getOwnedFieldByKey(key:any)
   {
-    console.log(this.dataService.getOwnedFields());
+
     return this.dataService.getOwnedFields().find(o => o.key == key);
+  }
+
+  getCultureByKey(catId:any)
+  {
+    console.log(this.dataService.getCultures());
+    return this.dataService.getCultures().find(o => o.catId == catId);
   }
 }
