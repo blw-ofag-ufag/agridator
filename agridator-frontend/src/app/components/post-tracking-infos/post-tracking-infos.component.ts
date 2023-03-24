@@ -42,7 +42,15 @@ export class PostTrackingInfosComponent  {
 
 
   ngOnInit() {
-    this.center = this.calculateCenter();
+    const flightPlanCoordinates = [
+      { lat: 46.947975, lng: 7.447447 },
+      { lat: 46.9479732, lng: 7.4474413 },
+      { lat: 46.947974873, lng: 7.447445322 },
+      { lat: 46.9479751232232, lng: 7.447446821312 },
+      { lat: 46.947975013123123, lng: 7.4474469322 },
+    ];
+
+    this.center = this.calculateCenter(flightPlanCoordinates);
   }
 
   public onMapReady(map: google.maps.Map): void {
@@ -52,15 +60,16 @@ export class PostTrackingInfosComponent  {
 
     
     const flightPlanCoordinates = [
-      { lat: 47.5644, lng: 7.5715 },
-      { lat: 47.5654, lng: 7.5710 },
-      { lat: 47.5642, lng: 7.4715 },
-      { lat: 47.5644, lng: 7.5715 },
+      { lat: 46.947975, lng: 7.447447 },
+      { lat: 46.9479732, lng: 7.4474413 },
+      { lat: 46.947974873, lng: 7.447445322 },
+      { lat: 46.9479751232232, lng: 7.447446821312 },
+      { lat: 46.947975013123123, lng: 7.4474469322 },
     ];
   
 
     const flightPath = new google.maps.Polyline({
-      path: this.points,
+      path: flightPlanCoordinates,
       geodesic: true, 
       strokeColor: "#FF0000",
       strokeOpacity: 1.0,
@@ -68,17 +77,19 @@ export class PostTrackingInfosComponent  {
     });
     flightPath.setMap(map);
   }
-  calculateCenter()
+
+  
+  calculateCenter(points :any[])
   {
     let sumPos = { lat:0, long:0 }
-    for(let p of this.points )
+    for(let p of points )
     {
       sumPos.lat += p.lat;
       sumPos.long += p.lng;
     }
 
-    sumPos.lat /= this.points.length;
-    sumPos.long /= this.points.length;
+    sumPos.lat /=  points.length;
+    sumPos.long /= points.length;
 
     return new google.maps.LatLng({lat: sumPos.lat, lng: sumPos.long}, true);
   }
@@ -90,5 +101,39 @@ export class PostTrackingInfosComponent  {
     feldkalenderArray.push(feldkalenderDto);
     this.localStorageService.setFeldkalender(feldkalenderArray);
     this.router.navigate(["/feldkalender"])
+  }
+
+
+  convexHull(points : any[]) {
+    // Sort points lexicographically
+    points.sort(function(a, b) {
+      return a.lat - b.lat || a.lng - b.lng;
+    });
+  
+    // Find lower hull
+    var lower = [];
+    for (var i = 0; i < points.length; i++) {
+      while (lower.length >= 2 && this.cross(lower[lower.length - 2], lower[lower.length - 1], points[i]) <= 0) {
+        lower.pop();
+      }
+      lower.push(points[i]);
+    }
+  
+    // Find upper hull
+    var upper = [];
+    for (var i = points.length - 1; i >= 0; i--) {
+      while (upper.length >= 2 && this.cross(upper[upper.length - 2], upper[upper.length - 1], points[i]) <= 0) {
+        upper.pop();
+      }
+      upper.push(points[i]);
+    }
+  
+    // Concatenate and return hull
+    return lower.slice(0, lower.length - 1).concat(upper.slice(0, upper.length - 1));
+  }
+  
+  // Compute cross product of vectors p1p2 and p2p3
+  cross(p1:any, p2:any, p3:any) {
+    return (p2.lat - p1.lat) * (p3.lng - p2.lng) - (p2.lng - p1.lng) * (p3.lat - p2.lat);
   }
 }
