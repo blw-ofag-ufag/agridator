@@ -11,8 +11,8 @@ export class DataService {
   getActionTypes ()
   {
     return [ 
-      {key:"keyA", value: "Aktion A"},
-      {key:"keyB", value: "Aktion B"},
+      {key:"keyA", value: "Düngen"},
+      {key:"keyB", value: "Sprühen"},
       {key:"keyC", value: "Aktion C"}
     ]
   };

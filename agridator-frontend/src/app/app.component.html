@@ -3,17 +3,17 @@
   <div fxLayout="row" fxLayoutAlign="space-between">
     <div fxLayoutAlign="start" fxLayoutGap="0.5rem">
       <div>
-        <a (click)="home()">
+        <a (click)="home()" href="#">
           <mat-icon>agriculture</mat-icon>
         </a>
       </div>
       <div>
-        <a (click)="feldkalender()">
+        <a (click)="feldkalender()" href="#">
           <mat-icon>event_note</mat-icon>
         </a>
       </div>
     </div>
-    <div fxLayoutAlign="end">
+    <div fxLayoutAlign="end" href="#">
       <div>
         <a (click)="settings()">
           <mat-icon>settings</mat-icon>
@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <div>
+  <mat-card id="main" >
     <router-outlet></router-outlet>
-  </div>
+  </mat-card>
 </div>
