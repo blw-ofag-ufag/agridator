@@ -13,10 +13,10 @@ namespace Agridator.Web.Data.Entities
         public LocalizedStringSet Nutzung { get; set; } = new LocalizedStringSet();
 
         [JsonProperty("Gueltig_Von")]
-        public int ValidFromYear { get; set; }
+        public int? ValidFromYear { get; set; }
 
         [JsonProperty("Gueltig_Bis")]
-        public int ValidToYear { get; set; }
+        public int? ValidToYear { get; set; }
 
         [JsonProperty("ueberlagernd")]
         public int Overlaying { get; set; }
