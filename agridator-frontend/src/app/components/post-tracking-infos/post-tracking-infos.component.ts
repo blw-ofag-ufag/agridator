@@ -2,6 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import {  Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Inject } from "@angular/core"
+import { FeldkalenderDto } from 'src/app/dto/feldkalender-dto';
 import { LocalStorageService } from 'src/app/service/local-storage.service';
 import { DataService } from './../../service/data.service';
 
@@ -84,7 +85,10 @@ export class PostTrackingInfosComponent  {
 
   moveToCalendar() 
   {
-    this.localStorageService.setFeldkalender(['todo']);
+    const feldkalenderArray = this.localStorageService.getFeldkalender();
+    const feldkalenderDto = new FeldkalenderDto();
+    feldkalenderArray.push(feldkalenderDto);
+    this.localStorageService.setFeldkalender(feldkalenderArray);
     this.router.navigate(["/feldkalender"])
   }
 }
