@@ -1,40 +1,51 @@
 
-<!-- <p>{{'pre-tracking.WelcomeText' | translate}} </p> -->
-
-<div class="container">
+<style>
+    .container form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <label class="field-header">Feld</label>
+      <mat-form-field appearance="fill" hintLabel="Feld auswählen">
+        <mat-label>Feld</mat-label>
+        <mat-select matNativeControl name="field" formControlName="field">
+          <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <label class="field-header">Arbeit</label>
+      <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
+        <mat-checkbox [formControlName]="i" (change)="toggleAdditionalOptions($event)"
+          [value]="workTypes[i].id">{{workTypes[i].title}}</mat-checkbox>
+      </ng-container>
   
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <label class="field-header">Feld</label>
-    <mat-form-field appearance="fill" hintLabel="Feld auswählen">
-      <mat-label>Feld</mat-label>
-      <mat-select matNativeControl name="field" formControlName="field">
-        <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <label class="field-header">Arbeit</label>
-    <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
-      <mat-checkbox [formControlName]="i" (change)="toggleAdditionalOptions($event)"
-        [value]="workTypes[i].key">{{workTypes[i].value}}</mat-checkbox>
-    </ng-container>
+      <mat-form-field *ngIf="showCultures" appearance="fill" hintLabel="Kulturen auswählen">
+        <mat-label>Kulturen</mat-label>
+        <mat-select matNativeControl name="cultures" formControlName="cultures">
+          <mat-option [value]="item.id" *ngFor="let item of cultures">{{item.description}}</mat-option>
+        </mat-select>
+      </mat-form-field>
 
-    <mat-divider *ngIf="showFertilizerList"></mat-divider>
-    <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
-      <mat-label>Düngemittel</mat-label>
-      <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
-        <mat-option [value]="item.key" *ngFor="let item of fertilizers">{{item.value}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+        
+        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
+          <mat-label>Düngemittel</mat-label>
+          <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
+            <mat-option [value]="item.it" *ngFor="let item of fertilizers">{{item.description}}</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-    <mat-divider *ngIf="showPlantProtectionProducts"></mat-divider>
-    <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
-      <mat-label>Pflanzenschutzmittel</mat-label>
-      <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
-        <mat-option [value]="item.key" *ngFor="let item of plantProtectionProducts">{{item.value}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <div class="nav-bar">
-      <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;"
-        [disabled]="!form.valid">Weiter</button>
-    </div>
-  </form>
-</div>
+        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
+          <mat-label>Pflanzenschutzmittel</mat-label>
+          <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
+            <mat-option [value]="item.id" *ngFor="let item of plantProtectionProducts">{{item.productName}} - {{item.companyNameShort}}</mat-option>          </mat-select>
+        </mat-form-field>
+
+        <div class="nav-bar">
+          <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;"
+            [disabled]="!form.valid">Weiter</button>
+        </div>
+
+      </form>
+  </div>
+
