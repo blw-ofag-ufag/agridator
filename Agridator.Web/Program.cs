@@ -1,7 +1,5 @@
 using Agridator.Web.Data;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +10,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddHostedService<MigratorService>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -35,13 +36,15 @@ using (var scope = app.Services.CreateScope())
         var context = services.GetService<ApplicationDbContext>();
         if (context?.Database.GetPendingMigrations().Any() ?? false)
         {
-            context.Database.EnsureCreated();
+            context.Database.EnsureDeleted();
+            context.Database.Migrate();
+            Task.Run(async ()=> await DataSeeder.SeedDataAsync(context));
         }
     }
     catch (Exception ex)
     {
-       // var logger = services.GetRequiredService<ILogger>();
-       // logger.LogError(ex, "An error occurred seeding the DB.");
+        var logger = services.GetRequiredService<ILogger>();
+        logger.LogError(ex, "An error occurred seeding the DB.");
     }
 }
 

@@ -16,6 +16,8 @@ namespace Agridator.Web.Data
 
         public DbSet<UsageType> UsageTypes => Set<UsageType>();
 
+        public DbSet<TypeOfWork> TypeOfWorks => Set<TypeOfWork>();
+
         public ApplicationDbContext(
             DbContextOptions<ApplicationDbContext> dbContextOptions)
             : base(dbContextOptions)
