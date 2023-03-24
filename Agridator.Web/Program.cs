@@ -9,11 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    //options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Ef_Postgres_Db"));
 });
 
 builder.Services.AddHostedService<MigratorService>();
-
+//gg
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -46,17 +47,22 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetService<ApplicationDbContext>();
+//        context.Database.ExecuteSqlRaw(@"DO $$ DECLARE r RECORD;
+//BEGIN
+//  FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = current_schema()) LOOP
+//    EXECUTE 'DROP TABLE ' || quote_ident(r.tablename) || ' CASCADE';
+//  END LOOP;
+//END $$;");
         if (context?.Database.GetPendingMigrations().Any() ?? false)
         {
-            context.Database.EnsureDeleted();
             context.Database.Migrate();
             Task.Run(async ()=> await DataSeeder.SeedDataAsync(context));
         }
     }
     catch (Exception ex)
     {
-        var logger = services.GetRequiredService<ILogger>();
-        logger.LogError(ex, "An error occurred seeding the DB.");
+        throw;
+        //nope
     }
 }
 

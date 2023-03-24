@@ -22,10 +22,10 @@ namespace Agridator.Web.Data.Entities
         public int Overlaying { get; set; }
 
         [JsonProperty("BFF_QI")]
-        public bool BffQi { get; set; }
+        public int BffQi { get; set; }
 
         [JsonProperty("Spezialkultur")]
-        public bool SpezialCulture { get; set; }
+        public int SpezialCulture { get; set; }
 
     }
 }

@@ -13,7 +13,7 @@ namespace Agridator.Web.Data.Configurations
                 throw new ArgumentNullException(nameof(builder));
             }
 
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.Code);
 
             builder.OwnsOne(o => o.Nutzung);
         }
