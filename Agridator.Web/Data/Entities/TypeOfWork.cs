@@ -7,13 +7,6 @@ namespace Agridator.Web.Data.Entities
         [JsonProperty(nameof(Id))]
         public int Id { get; set; }
 
-        [JsonProperty(nameof(Title_de))]
-        public string Title_de { get; set; } = string.Empty;
-
-        [JsonProperty(nameof(Title_fr))]
-        public string Title_fr { get; set; } = string.Empty;
-
-        [JsonProperty(nameof(Title_it))]
-        public string Title_it { get; set; } = string.Empty;
+        public LocalizedStringSet Title { get; set; } = new LocalizedStringSet();
     }
 }
