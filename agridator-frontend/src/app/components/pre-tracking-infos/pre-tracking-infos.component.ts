@@ -45,7 +45,9 @@ export class PreTrackingInfosComponent implements OnInit {
   }
 
   onSubmit() {
-    this.router.navigate(["/tracking"])
+    this.router.navigate(["/tracking"], {
+      state: this.form.value
+    })
   }
 
   atLeastOne(): ValidatorFn {

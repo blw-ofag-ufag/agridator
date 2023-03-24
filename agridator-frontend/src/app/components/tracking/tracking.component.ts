@@ -7,78 +7,72 @@ import { Router } from '@angular/router';
   styleUrls: ['./tracking.component.scss']
 })
 export class TrackingComponent {
-  points : any[] = [];
+  points: any[] = [];
   tracking = false;
   interval = 1000;
   timer: any = null;
-  constructor(private router : Router)
-  {
+  config: any = null;
+  constructor(private router: Router) {
+    this.config = this.router.getCurrentNavigation()?.extras.state;
   }
 
-  getIcon()
-  {
-    return this.tracking ? "stop": "play_arrow" ;
+  getIcon() {
+    return this.tracking ? "stop" : "play_arrow";
   }
 
-  hasValidTracking()
-  {
-    return !this.tracking  && this.points.length > 2;
+  hasValidTracking() {
+    return !this.tracking && this.points.length > 2;
   }
 
-  toggleTracking()
-  {
-   
+  toggleTracking() {
+
     this.tracking = !this.tracking;
 
-    if(this.tracking)
-    {
+    if (this.tracking) {
       this.startRecording();
     }
     else {
       this.stopRecording();
     }
-
-
   }
 
-
-  startRecording()
-  {
+  startRecording() {
     this.timer = setInterval(() => this.getLocation(), this.interval);
   }
 
-  getLocation()
-  {
-    if(navigator.geolocation)
-    {
+  getLocation() {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-      (position) => {
-          if(position)
-          {
+        (position) => {
+          if (position) {
             console.log(position.coords.latitude, position.coords.longitude);
-            this.points.push (
+            this.points.push(
               {
                 lat: position.coords.latitude,
                 long: position.coords.longitude,
               }
             )
           }
-      }, 
-      (error) => { console.log(error)}
+        },
+        (error) => { console.log(error) }
       )
-    }else {
+    } else {
       alert("Geolocation is not supported by this browser");
     }
   }
 
-  stopRecording()
-  {
+  stopRecording() {
     clearInterval(this.timer);
     this.timer = null;
   }
 
-  finishTracking()
-  {
-    this.router.navigate(["/post-tracking-infos"])
+  finishTracking() {
+    this.router.navigate(["/post-tracking-infos"], {
+      state:
+      {
+        config: this.config,
+        points: this.points
+      }
+    })
   }
 }
