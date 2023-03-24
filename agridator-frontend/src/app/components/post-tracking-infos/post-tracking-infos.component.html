@@ -35,10 +35,11 @@
     <h2>Config</h2> 
     {{config | json}}
     <h2>Geo-Daten</h2> 
-    {{points | json}}
+    <google-map  width="100%"[center]="center" (mapInitialized)="onMapReady($event)" #map></google-map>
+
 
     <div class="nav-bar">
         <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;" (click)="moveToCalendar()">Speichern</button>
     </div>
-    
+
 </div>
