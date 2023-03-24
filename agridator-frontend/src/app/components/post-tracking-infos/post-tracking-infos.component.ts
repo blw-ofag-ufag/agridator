@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from './../../service/data.service';
 
 @Component({
   selector: 'app-post-tracking-infos',
@@ -9,17 +10,31 @@ import { Router } from '@angular/router';
 export class PostTrackingInfosComponent {
   config: any;
   points: any[] =[];
-  constructor(private router : Router )
+  ownedFields: any[] = [];
+  workTypes: any[] = [];
+  fertilizers: any[] = [];
+  plantProtectionProducts: any[] = [];
+  
+  constructor(private dataService: DataService, private router : Router )
   {
     let state = this.router.getCurrentNavigation()?.extras.state;
     if(state !== undefined)
     {
       this.config = state['config'];
       this.points = state['points'];
+      this.workTypes = this.dataService.getActionTypes();
+      this.ownedFields = this.dataService.getOwnedFields();
+      this.fertilizers = this.dataService.getFertilizier();
+      this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
     }
     else 
     {
       this.router.navigate(["/pre-tracking-infos"])
     }
+  }
+
+  moveToCalendar() 
+  {
+    this.router.navigate(["/feldkalender"])
   }
 }
