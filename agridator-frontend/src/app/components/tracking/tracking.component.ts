@@ -81,4 +81,9 @@ export class TrackingComponent {
   {
     this.router.navigate(["/post-tracking-infos"])
   }
+
+  moveToPreTracking() 
+  {
+    this.router.navigate(["/pre-tracking-infos"])
+  }
 }
