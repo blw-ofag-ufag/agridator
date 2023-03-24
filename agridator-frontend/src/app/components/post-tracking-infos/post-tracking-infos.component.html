@@ -18,9 +18,9 @@
             <p class="thick field field-header">Feld:</p>
             <p style="margin-left: 5px;" >{{ getOwnedFieldByKey(config?.field)?.value }}</p>
         </div>
-        <div *ngIf="config?.fertilizer !== null">
+        <div *ngIf="config?.cultures !== null">
             <p class="thick field-header">Kultur:</p>
-            <p style="margin-left: 5px;" >{{ getCultureByKey(config?.fertilizer)?.description}}</p>
+            <p style="margin-left: 5px;" >{{ getCultureByKey(config?.cultures)?.description}}</p>
         </div>
 
         <div *ngIf="config?.fertilizer !== null">
