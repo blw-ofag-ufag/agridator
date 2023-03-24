@@ -94,18 +94,6 @@ namespace Agridator.Web.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Title_de")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Title_fr")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Title_it")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
 
                     b.ToTable("TypeOfWorks");
@@ -238,6 +226,37 @@ namespace Agridator.Web.Migrations
                         });
 
                     b.Navigation("Description")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Agridator.Web.Data.Entities.TypeOfWork", b =>
+                {
+                    b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Title", b1 =>
+                        {
+                            b1.Property<int>("TypeOfWorkId")
+                                .HasColumnType("INTEGER");
+
+                            b1.Property<string>("De")
+                                .HasMaxLength(8000)
+                                .HasColumnType("TEXT");
+
+                            b1.Property<string>("Fr")
+                                .HasMaxLength(8000)
+                                .HasColumnType("TEXT");
+
+                            b1.Property<string>("It")
+                                .HasMaxLength(8000)
+                                .HasColumnType("TEXT");
+
+                            b1.HasKey("TypeOfWorkId");
+
+                            b1.ToTable("TypeOfWorks");
+
+                            b1.WithOwner()
+                                .HasForeignKey("TypeOfWorkId");
+                        });
+
+                    b.Navigation("Title")
                         .IsRequired();
                 });
 

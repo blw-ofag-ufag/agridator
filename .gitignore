@@ -30,5 +30,6 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 .idea
+/Agridator.Web/ClientApp/
 /Agridator.Web/ClientApp/.angular/
 /Agridator.Web/main.db

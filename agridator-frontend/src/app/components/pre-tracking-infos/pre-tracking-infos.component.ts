@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormArray, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { DataService } from './../../service/data.service';
 
 @Component({
@@ -9,42 +10,62 @@ import { DataService } from './../../service/data.service';
 })
 export class PreTrackingInfosComponent implements OnInit {
   title = 'Agridator';
-  ownedFields : any[] = [];
-  allowedActionTypes : any[] = [];
+  showFertilizerList = false;
+  showPlantProtectionProducts = false;
+  ownedFields: any[] = [];
+  workTypes: any[] = [];
+  fertilizers: any[] = [];
+  plantProtectionProducts: any[] = [];
   form: FormGroup = new FormGroup({});
 
-  constructor(private dataService: DataService, private fb: FormBuilder) {
-    this.allowedActionTypes = this.dataService.getActionTypes();
+  constructor(private dataService: DataService, private fb: FormBuilder, private router: Router) {
+    this.workTypes = this.dataService.getActionTypes();
     this.ownedFields = this.dataService.getOwnedFields();
+    this.fertilizers = this.dataService.getFertilizier();
+    this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
   }
 
   ngOnInit(): void {
     this.form = this.fb.group({
       field: [null, [Validators.required]],
-      actions: this.fb.array([], this.atLeastOne())
+      actions: this.fb.array([], this.atLeastOne()),
+      fertilizer: [null],
+      plantProtectionProduct: [null]
     });
-  }
 
+    this.addActions();
+  }
 
   get actions() {
     return this.form.controls["actions"] as FormArray;
   }
 
-  addAction() {
-    const actionForm = this.fb.group({
-        actionType: ['', Validators.required]
-    });
-  
-    this.actions.push(actionForm);
+  addActions() {
+    this.workTypes.forEach(() => this.actions.push(new FormControl(false)))
   }
 
-  deleteAction(actionIndex: number) {
-      this.actions.removeAt(actionIndex);
+  onSubmit() {
+    this.router.navigate(["/tracking"], {
+      state: this.form.value
+    })
   }
 
   atLeastOne(): ValidatorFn {
-    return (control:AbstractControl) : ValidationErrors | null => {
-      return (control as FormArray).controls.length == 0 ?  {noAction: control.value} : null;
+    return (control: AbstractControl): ValidationErrors | null => {
+      return (control as FormArray).controls.some(x => x.value == true) ? null : { noAction: control.value };
+    }
+  }
+
+  toggleAdditionalOptions(event: any) {
+    console.log(event);
+    switch (event.source.value) {
+      case "keyA":
+        this.showFertilizerList = event.checked;
+        break;
+      case "keyB":
+        this.showPlantProtectionProducts = event.checked
+        break;
+      default: break;
     }
   }
 }

@@ -1,7 +1,30 @@
-<h1>
-  Welcome to Agridator!
-</h1>
+<div class="agridator-content" fxLayout="column">
 
-<div>
   <router-outlet></router-outlet>
+
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayoutAlign="start" fxLayoutGap="0.5rem">
+      <div>
+        <a (click)="home()">
+          <mat-icon>agriculture</mat-icon>
+        </a>
+      </div>
+      <div>
+        <a (click)="feldkalender()">
+          <mat-icon>event_note</mat-icon>
+        </a>
+      </div>
+    </div>
+    <div fxLayoutAlign="end">
+      <div>
+        <a (click)="settings()">
+          <mat-icon>settings</mat-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <mat-card id="main" >
+    <router-outlet></router-outlet>
+  </mat-card>
 </div>
