@@ -30,6 +30,7 @@ export class TrackingComponent {
 
     if (this.tracking) {
       this.startRecording();
+      this.getLocation()
     }
     else {
       this.stopRecording();
