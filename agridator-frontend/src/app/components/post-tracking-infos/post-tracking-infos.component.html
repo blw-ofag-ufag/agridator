@@ -2,4 +2,5 @@
     <h1>Post Tracking</h1> 
     {{config | json}}
     {{points | json}}
+    <google-map  width="100%"[center]="center" (mapInitialized)="onMapReady($event)" #map></google-map>
 </div>

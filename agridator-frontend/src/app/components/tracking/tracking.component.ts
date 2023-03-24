@@ -49,7 +49,7 @@ export class TrackingComponent {
             this.points.push(
               {
                 lat: position.coords.latitude,
-                long: position.coords.longitude,
+                lng: position.coords.longitude,
               }
             )
           }
