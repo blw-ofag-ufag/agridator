@@ -12,4 +12,5 @@ git merge origin/main
 ng build --output-path ../docs --base-href /agridator/
 cp ../docs/index.html ../docs/404.html
 ```
-commit and push
+- commit and push
+- git checkout main
