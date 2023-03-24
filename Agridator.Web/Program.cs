@@ -50,7 +50,7 @@ using (var scope = app.Services.CreateScope())
         context.Database.EnsureDeleted();
         if (context?.Database.GetPendingMigrations().Any() ?? false)
         {
-            context.Database.EnsureDeleted();
+            //context.Database.EnsureDeleted();
             context.Database.Migrate();
             Task.Run(async ()=> await DataSeeder.SeedDataAsync(context));
         }
