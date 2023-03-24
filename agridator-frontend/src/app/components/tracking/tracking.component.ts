@@ -75,4 +75,9 @@ export class TrackingComponent {
       }
     })
   }
+
+  moveToPreTracking() 
+  {
+    this.router.navigate(["/pre-tracking-infos"])
+  }
 }
