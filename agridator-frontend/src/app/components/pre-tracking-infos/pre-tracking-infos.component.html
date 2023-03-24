@@ -1,5 +1,8 @@
 <style>
-
+    .container form {
+      display: flex;
+      flex-direction: column;
+    }
   </style>
   <div class="container">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -9,32 +12,13 @@
             <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
           </mat-select>
         </mat-form-field>
-
-        <mat-divider></mat-divider>
-        <h2>Art der Arbeit</h2>
-          <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
-                <mat-checkbox [formControlName]="i"  [value]="workTypes[i].key" (change)="toggleAdditionalOptions($event)">{{workTypes[i].value}}</mat-checkbox>
-          </ng-container>
-
-        <mat-divider *ngIf="showFertilizerList"></mat-divider>
-        <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
-          <mat-label>Düngemittel</mat-label>
-          <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
-            <mat-option [value]="item.key" *ngFor="let item of fertilizers">{{item.value}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-divider *ngIf="showPlantProtectionProducts"></mat-divider>
-        <mat-form-field *ngIf="showPlantProtectionProducts" appearance="fill" hintLabel="Pflanzenschutzmittel auswählen">
-          <mat-label>Pflanzenschutzmittel</mat-label>
-          <mat-select matNativeControl name="plantProtectionProduct" formControlName="plantProtectionProduct">
-            <mat-option [value]="item.key" *ngFor="let item of plantProtectionProducts">{{item.value}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-
-
+        <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
+              <mat-checkbox [formControlName]="i"  [value]="workTypes[i].key">{{workTypes[i].value}}</mat-checkbox>
+        </ng-container>
+  
         <div mat-dialog-actions align="end">
           <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Weiter</button>
         </div>
+
       </form>
   </div>

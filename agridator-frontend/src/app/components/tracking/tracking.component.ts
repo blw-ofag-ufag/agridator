@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./tracking.component.scss']
 })
 export class TrackingComponent {
-
   points : any[] = [];
   tracking = false;
 
@@ -36,5 +35,4 @@ export class TrackingComponent {
   {
     this.router.navigate(["/post-tracking-infos"])
   }
-
 }
