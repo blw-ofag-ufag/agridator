@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeldkalenderComponent } from './feldkalender.component';
@@ -8,7 +9,10 @@ describe('FeldkalenderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FeldkalenderComponent ]
+      declarations: [ FeldkalenderComponent ],
+      imports: [
+        CommonModule
+      ]
     })
     .compileComponents();
 

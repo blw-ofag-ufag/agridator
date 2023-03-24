@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { TrackingComponent } from './tracking.component';
 
@@ -8,7 +9,10 @@ describe('TrackingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TrackingComponent ]
+      declarations: [ TrackingComponent ],
+      imports: [
+        ReactiveFormsModule
+      ]
     })
     .compileComponents();
 

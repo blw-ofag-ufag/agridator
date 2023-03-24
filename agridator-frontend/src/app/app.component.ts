@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {  FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
+import { Router, Routes } from '@angular/router';
 import { DataService } from './service/data.service';
 import {TranslateService} from "@ngx-translate/core";
 
@@ -12,13 +13,26 @@ export class AppComponent  {
   title = 'Agridator';
 
 
-    constructor(private dataService: DataService, private translate: TranslateService) {
-      translate.setDefaultLang('de');
-      translate.use('de'); 
-	  }
-
+  constructor(private dataService: DataService,
+              private fb: FormBuilder,
+              private router: Router,
+              private translate: TranslateService) {
+                translate.setDefaultLang('de');
+                translate.use('de'); 
+  }
 
   useLanguage(language: string): void {
-     this.translate.use(language); 
+    this.translate.use(language); 
+
+  home() {
+    this.router.navigate(['home']);
+  }
+
+  feldkalender() {
+    this.router.navigate(['feldkalender']);
+  }
+
+  settings() {
+    this.router.navigate(['settings']);
   }
 }

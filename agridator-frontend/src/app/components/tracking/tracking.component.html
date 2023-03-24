@@ -1,1 +1,13 @@
-<p>tracking works!</p>
+<div class="button-wrapper">
+    <button class="btn-big-circle" [ngClass]="{
+    'playing': tracking }" (click)="toggleTracking()">
+        <mat-icon aria-hidden="false" aria-label="TrackingIcon" [fontIcon]="getIcon()"></mat-icon>
+    </button>
+</div>
+
+<div mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button>
+</div>
+<div mat-dialog-actions align="start">
+    <button mat-raised-button color="primary" type="submit" [disabled]="tracking">Zurück</button>
+</div>

@@ -10,19 +10,11 @@ namespace Agridator.Web.Data.Entities
         [JsonProperty(nameof(CatId))]
         public int CatId { get; set; }
         [JsonIgnore]
-        public CultureCategories Category { get; set; } = null!;
+        public CultureCategory Category { get; set; } = null!;
 
         [JsonProperty(nameof(Cultureode))]
         public int Cultureode { get; set; }
 
-        [JsonProperty(nameof(Description_de))]
-        public string Description_de { get; set; } = string.Empty;
-
-        [JsonProperty(nameof(Description_fr))]
-        public string Description_fr { get; set; } = string.Empty;
-
-        [JsonProperty(nameof(Description_it))]
-        public string Description_it { get; set; } = string.Empty;
-
+        public LocalizedStringSet Description { get; set; } = new LocalizedStringSet();
     }
 }
