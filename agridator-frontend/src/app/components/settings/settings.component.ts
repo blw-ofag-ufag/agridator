@@ -9,10 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class SettingsComponent {
 
   constructor(
-    private translate: TranslateService) {
-      translate.setDefaultLang('de');
-      translate.use('de'); 
-}
+    private translate: TranslateService) {}
 
 useLanguage(language: string): void {
 this.translate.use(language); 

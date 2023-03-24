@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-tracking',
@@ -12,9 +14,13 @@ export class TrackingComponent {
   interval = 1000;
   timer: any = null;
   config: any = null;
-  constructor(private router: Router) {
+  constructor(private router: Router, private translate: TranslateService) {
     this.config = this.router.getCurrentNavigation()?.extras.state;
   }
+
+  useLanguage(language: string): void {
+    this.translate.use(language); 
+    }
 
   getIcon() {
     return this.tracking ? "stop" : "play_arrow";
