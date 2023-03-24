@@ -1,5 +1,11 @@
 {
+	"Button.Back": "Indietro",
+	"Button.Continue": "Continuare",
+	"Button.Reset": "Annullare",
+	"Button.Save": "Salva",
 	"feldkalender.Title": "Libretto dei campi",
+	"post-tracking.Records": "Raccolta",
+	"pre-tracking.Cultures": "Colture",
 	"pre-tracking.FeldAuswaehlen": "Scegliere il campo",
 	"pre-tracking.Fertilizer": "Concimi",
 	"pre-tracking.MockWorktypeDuengen": "Applicare il fertilizzante",
@@ -8,7 +14,7 @@
 	"pre-tracking.PlantsFields": "Campo",
 	"pre-tracking.Sprache": "IT",
 	"pre-tracking.WelcomeText": "Essempio",
+	"pre-tracking.Work": "Lavoro",
 	"pre-tracking.Worktype": "",
-	"settings.Title": "Impostazioni",
-	"tracking": ""
+	"settings.Title": "Impostazioni"
 }
