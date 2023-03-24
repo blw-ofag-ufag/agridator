@@ -5,13 +5,16 @@
 
 </style>
 <div class="container">
+  
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label class="field-header">Feld</label>
     <mat-form-field appearance="fill" hintLabel="Feld auswählen">
       <mat-label>Feld</mat-label>
       <mat-select matNativeControl name="field" formControlName="field">
         <mat-option [value]="item.key" *ngFor="let item of ownedFields">{{item.value}}</mat-option>
       </mat-select>
     </mat-form-field>
+    <label class="field-header">Arbeit</label>
     <ng-container formArrayName="actions" *ngFor="let actionForm of actions.controls; let i = index">
       <mat-checkbox [formControlName]="i" (change)="toggleAdditionalOptions($event)"
         [value]="workTypes[i].key">{{workTypes[i].value}}</mat-checkbox>

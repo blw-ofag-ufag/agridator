@@ -1,21 +1,20 @@
 <div class="agridator-content" fxLayout="column">
-
   <router-outlet></router-outlet>
-
   <div fxLayout="row" fxLayoutAlign="space-between">
-    <div fxLayoutAlign="start" fxLayoutGap="0.5rem">
-      <div>
-        <a (click)="home()">
-          <mat-icon>agriculture</mat-icon>
-        </a>
-      </div>
+    <div fxLayoutAlign="start" fxLayoutGap="0.5rem"  class="mid-icon">
       <div>
         <a (click)="feldkalender()">
           <mat-icon>event_note</mat-icon>
         </a>
       </div>
     </div>
-    <div fxLayoutAlign="end">
+    <div>
+      <a (click)="home()">
+        <h1>Agridator</h1>
+        <!-- <mat-icon>agriculture</mat-icon> -->
+      </a>
+    </div>
+    <div fxLayoutAlign="end" class="mid-icon">
       <div>
         <a (click)="settings()">
           <mat-icon>settings</mat-icon>
