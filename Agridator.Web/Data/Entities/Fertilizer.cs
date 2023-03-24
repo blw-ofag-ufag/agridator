@@ -9,7 +9,6 @@ namespace Agridator.Web.Data.Entities
 
         public LocalizedStringSet Description { get; set; } = new LocalizedStringSet();
 
-        [JsonProperty("PST_STATUS")]
         public string Status { get; set; } = string.Empty;
     }
 }
