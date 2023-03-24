@@ -10,9 +10,7 @@
     transition: background-color 0.3s;
     mat-icon {
         transition: color 0.3s;
-
     }
-    
 }
 
 .playing 
@@ -26,7 +24,40 @@
 
 .button-wrapper {
     width: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+}
+
+mat-divider {
+    margin: 2rem 0 !important;
+  
+}
+
+.nav-bar 
+{
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.animation 
+{
+    opacity: 0.4;
+    margin-bottom: 2rem;
+}
+
+*:host {
+    height: 100%;
 }

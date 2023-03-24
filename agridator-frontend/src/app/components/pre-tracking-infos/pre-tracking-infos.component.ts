@@ -1,3 +1,4 @@
+import { ViewEncapsulation } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -5,8 +6,10 @@ import { DataService } from './../../service/data.service';
 
 @Component({
   selector: 'app-root',
+
   templateUrl: './pre-tracking-infos.component.html',
-  styleUrls: ['./pre-tracking-infos.component.scss']
+  styleUrls: ['./pre-tracking-infos.component.scss'],
+  
 })
 export class PreTrackingInfosComponent implements OnInit {
   title = 'Agridator';
@@ -23,6 +26,7 @@ export class PreTrackingInfosComponent implements OnInit {
     this.ownedFields = this.dataService.getOwnedFields();
     this.fertilizers = this.dataService.getFertilizier();
     this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
+  
   }
 
   ngOnInit(): void {
