@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FeldkalenderComponent } from './components/feldkalender/feldkalender.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { SettingsComponent } from './components/settings/settings.component';
+import { SettingsComponent } from './components/settings/settings.component'; 
+
 
 const routes: Routes = [
   {path: 'pre-tracking-infos', component: PreTrackingInfosComponent},
@@ -69,6 +71,7 @@ const routes: Routes = [
     FlexLayoutModule,
     MatCardModule,
     ReactiveFormsModule,
+    GoogleMapsModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
@@ -96,7 +99,6 @@ exports: [
 })
 export class AppModule { }
 
-// required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/');
 }

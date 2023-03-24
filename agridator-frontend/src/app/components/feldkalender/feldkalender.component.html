@@ -1,5 +1,22 @@
 <h1>{{'feldkalender.Title' | translate}}</h1>
 
-<div *ngFor="let feldkalenderItem of feldkalenderArray">
-    {{feldkalenderItem}}
+<div *ngFor="let feldkalenderDto of feldkalenderArray">
+    <mat-card>
+        <mat-card-title style="color: #61775e">
+            {{feldkalenderDto.date|date:'dd.MM.yyyy HH:mm:ss'}}
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+                {{getOwnedFieldByKey(feldkalenderDto.config.field)?.value}}
+            </div>
+            <div>
+                <div *ngFor="let point of feldkalenderDto.points">
+                    {{point.lan}} {{point.lng}}
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <div>
+        &nbsp;
+    </div>
 </div>

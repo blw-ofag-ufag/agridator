@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
+
 
 @Component({
   selector: 'app-tracking',
@@ -9,12 +11,16 @@ import { Router } from '@angular/router';
 export class TrackingComponent {
   points: any[] = [];
   tracking = false;
-  interval = 5000;
+  interval = 1000;
   timer: any = null;
   config: any = null;
-  constructor(private router: Router) {
+  constructor(private router: Router, private translate: TranslateService) {
     this.config = this.router.getCurrentNavigation()?.extras.state;
   }
+
+  useLanguage(language: string): void {
+    this.translate.use(language); 
+    }
 
   getIcon() {
     return this.tracking ? "stop" : "play_arrow";
@@ -50,7 +56,7 @@ export class TrackingComponent {
             this.points.push(
               {
                 lat: position.coords.latitude,
-                long: position.coords.longitude,
+                lng: position.coords.longitude,
               }
             )
           }
@@ -77,7 +83,7 @@ export class TrackingComponent {
     })
   }
 
-  moveToPreTracking() 
+  moveToPreTracking()
   {
     this.router.navigate(["/pre-tracking-infos"])
   }
