@@ -60,16 +60,16 @@ export class PostTrackingInfosComponent  {
 
     
     const flightPlanCoordinates = [
-      { lat: 46.947975, lng: 7.447447 },
-      { lat: 46.9479732, lng: 7.4474413 },
-      { lat: 46.947974873, lng: 7.447445322 },
-      { lat: 46.9479751232232, lng: 7.447446821312 },
-      { lat: 46.947975013123123, lng: 7.4474469322 },
+      { lat: 46.947465, lng: 7.447447 },
+      { lat: 46.9479432, lng: 7.4474513 },
+      { lat: 46.947984813, lng: 7.447445322 },
+      { lat: 46.9479551234232, lng: 7.44742321312 },
+      { lat: 46.947975013123123, lng: 7.4473469322 },
     ];
   
 
-    const flightPath = new google.maps.Polyline({
-      path: flightPlanCoordinates,
+    const flightPath = new google.maps.Polygon({
+      paths: [flightPlanCoordinates],
       geodesic: true, 
       strokeColor: "#FF0000",
       strokeOpacity: 1.0,
@@ -78,7 +78,7 @@ export class PostTrackingInfosComponent  {
     flightPath.setMap(map);
   }
 
-  
+
   calculateCenter(points :any[])
   {
     let sumPos = { lat:0, long:0 }
@@ -135,5 +135,33 @@ export class PostTrackingInfosComponent  {
   // Compute cross product of vectors p1p2 and p2p3
   cross(p1:any, p2:any, p3:any) {
     return (p2.lat - p1.lat) * (p3.lng - p2.lng) - (p2.lng - p1.lng) * (p3.lat - p2.lat);
+  }
+
+  getFertilizerByKey(key:any)
+  {
+
+    return this.dataService.getFertilizier().find(o => o.id == key);
+  }
+
+  getPPP(key:any)
+  {
+    console.log(key,this.dataService.getPlantProtectionProducts())
+    return this.dataService.getPlantProtectionProducts().find(o => o.id == key);
+  }
+
+  getCultureByKey(key:any)
+  {
+    return this.dataService.getCultures().find(o => o.id == key);
+  }
+
+  getWorkByKey(key:any)
+  {
+    return this.dataService.getTypeOfWork().find(o => o.id == key);
+  }
+
+  getOwnedFieldByKey(key:any)
+  {
+    console.log(this.dataService.getOwnedFields());
+    return this.dataService.getOwnedFields().find(o => o.key == key);
   }
 }
