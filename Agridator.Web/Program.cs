@@ -1,4 +1,5 @@
 using Agridator.Web.Data;
+using Agridator.Web.Mapping;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddAutoMapper(typeof(CatalogMappingProfile).Assembly);
 
 
 
