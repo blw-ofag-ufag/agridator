@@ -1,5 +1,10 @@
 {
+	"Button.Back": "Retour",
+	"Button.Continue": "Continuer",
+	"Button.Save": "Sauvegarder",
 	"feldkalender.Title": "Carnets des champs",
+	"post-tracking.Records": "Relevé",
+	"pre-tracking.Cultures": "Cultures",
 	"pre-tracking.FeldAuswaehlen": "Choisir le terrain",
 	"pre-tracking.Fertilizer": "Engrais",
 	"pre-tracking.MockWorktypeDuengen": "Mettre de l'engrais",
@@ -8,7 +13,7 @@
 	"pre-tracking.PlantsFields": "Terrain",
 	"pre-tracking.Sprache": "FR",
 	"pre-tracking.WelcomeText": "Exemple",
+	"pre-tracking.Work": "Travail",
 	"pre-tracking.Worktype": "",
-	"settings.Title": "Paramètres",
-	"tracking": ""
+	"settings.Title": "Paramètres"
 }

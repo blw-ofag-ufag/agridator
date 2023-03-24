@@ -11,8 +11,8 @@
     </div>
 
     <div  class="nav-bar" fxLayout="row" fxLayoutAlign="space-between">
-        <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">Zurück</button>
-        <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">{{'Button.Back' | translate}}</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">{{'Button.Continue' | translate}}</button>
     </div>
 
 </div>

@@ -11,20 +11,20 @@
 </style>
 
 <div>
-    <h1>Aufzeichnung</h1> 
+    <h1>{{'post-tracking.Records' | translate}}</h1> 
     <div class="container">
         <div>
-            <p class="thick">Feld:</p>
+            <p class="thick">{{'pre-tracking.PlantsFields' | translate}}:</p>
             <p style="margin-left: 5px;" >{{config?.field}}</p>
         </div>
 
         <div>
-            <p class="thick">Düngemittel:</p>
+            <p class="thick">{{'pre-tracking.Fertilizer' | translate}}:</p>
             <p style="margin-left: 5px;" >{{config?.fertilizer}}</p>
         </div>
 
         <div>
-            <p class="thick">Pflanzenschutzmittel:</p>
+            <p class="thick">{{'pre-tracking.PlantProtection' | translate}}:</p>
             <p style="margin-left: 5px;" >{{config?.plantProtectionProduct}}</p>
         </div>
         
@@ -34,12 +34,12 @@
 
     <h2>Config</h2> 
     {{config | json}}
-    <h2>Geo-Daten</h2> 
+    <h2>Geo-Data</h2> 
     <google-map  width="100%"[center]="center" (mapInitialized)="onMapReady($event)" #map></google-map>
 
 
     <div class="nav-bar">
-        <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;" (click)="moveToCalendar()">Speichern</button>
+        <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;" (click)="moveToCalendar()">{{'Button.Save' | translate}}</button>
     </div>
 
 </div>

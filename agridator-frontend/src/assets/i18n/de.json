@@ -1,5 +1,10 @@
 {
+	"Button.Back": "Zurück",
+	"Button.Continue": "Weiter",
+	"Button.Save": "Speichern",
 	"feldkalender.Title": "Feldkalender",
+	"post-tracking.Records": "Aufzeichnung",
+	"pre-tracking.Cultures": "Kulturen",
 	"pre-tracking.FeldAuswaehlen": "Feld auswählen",
 	"pre-tracking.Fertilizer": "Dünger",
 	"pre-tracking.MockWorktypeDuengen": "Dünger sprühen",
@@ -8,7 +13,7 @@
 	"pre-tracking.PlantsFields": "Feld",
 	"pre-tracking.Sprache": "DE",
 	"pre-tracking.WelcomeText": "Irgend ein Starttext / Titel, mehrsprachig.",
+	"pre-tracking.Work": "Arbeit",
 	"pre-tracking.Worktype": "Feldarbeitstyp",
-	"settings.Title": "Einstellungen",
-	"tracking": ""
+	"settings.Title": "Einstellungen"
 }
