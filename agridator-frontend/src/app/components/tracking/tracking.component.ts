@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class TrackingComponent {
   points: any[] = [];
   tracking = false;
-  interval = 5000;
+  interval = 1000;
   timer: any = null;
   config: any = null;
   constructor(private router: Router) {
@@ -77,7 +77,7 @@ export class TrackingComponent {
     })
   }
 
-  moveToPreTracking() 
+  moveToPreTracking()
   {
     this.router.navigate(["/pre-tracking-infos"])
   }
