@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class TrackingComponent {
   points: any[] = [];
   tracking = false;
-  interval = 1000;
+  interval = 5000;
   timer: any = null;
   config: any = null;
   constructor(private router: Router) {
@@ -30,6 +30,7 @@ export class TrackingComponent {
 
     if (this.tracking) {
       this.startRecording();
+      this.getLocation()
     }
     else {
       this.stopRecording();

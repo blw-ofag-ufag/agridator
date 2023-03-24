@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -11,7 +13,9 @@ describe('AppComponent', () => {
       ],
       imports: [
         MatIconModule,
-        RouterModule
+        RouterModule,
+        TranslateModule.forRoot(),
+        MatCardModule
       ]
     }).compileComponents();
   });

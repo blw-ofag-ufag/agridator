@@ -6,12 +6,14 @@
         </button>
     </div>
 
+    <div [hidden]="!tracking">
+        <img class="animation" src="assets/animation.gif" />
+    </div>
 
-<div [hidden]="!tracking">
-    <img class="animation" src="/assets/animation.gif" />
+    <div  class="nav-bar" fxLayout="row" fxLayoutAlign="space-between">
+        <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">Zurück</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button>
+    </div>
+
 </div>
 
-<div  class="nav-bar" fxLayout="row" fxLayoutAlign="space-between">
-    <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">Zurück</button>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button> 
-</div>

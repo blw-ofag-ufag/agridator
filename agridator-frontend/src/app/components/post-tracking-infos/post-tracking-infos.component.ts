@@ -2,7 +2,8 @@ import { DOCUMENT } from '@angular/common';
 import {  Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Inject } from "@angular/core"
-import { GoogleMap } from '@angular/google-maps';
+import { LocalStorageService } from 'src/app/service/local-storage.service';
+import { DataService } from './../../service/data.service';
 
 
 @Component({
@@ -12,29 +13,35 @@ import { GoogleMap } from '@angular/google-maps';
 })
 export class PostTrackingInfosComponent  {
   config: any;
+  points: any[] =[];
+  ownedFields: any[] = [];
+  workTypes: any[] = [];
+  fertilizers: any[] = [];
+  plantProtectionProducts: any[] = [];
   map : any = null;
-  points: any[] = [];
   center : google.maps.LatLng = new google.maps.LatLng({lat:0, lng: 0});
 
   constructor(private router: Router,  @Inject(DOCUMENT) private document: Document,
-  private renderer2: Renderer2) {
+  private renderer2: Renderer2, private dataService: DataService, private localStorageService: LocalStorageService)
+  {
+
     let state = this.router.getCurrentNavigation()?.extras.state;
     if (state !== undefined) {
       this.config = state['config'];
       this.points = state['points'];
+      this.workTypes = this.dataService.getTypeOfWork();
+      this.ownedFields = this.dataService.getOwnedFields();
+      this.fertilizers = this.dataService.getFertilizier();
+      this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
     }
     else {
       this.router.navigate(["/pre-tracking-infos"])
     }
   }
 
-  ngOnInit() {
-    // const url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAyMH-A99yD5fHQPz7uzqk8glNJYGEqus';
-    // this.loadScript(url);
-    this.center = this.calculateCenter();
 
-    
-    
+  ngOnInit() {
+    this.center = this.calculateCenter();
   }
 
   public onMapReady(map: google.maps.Map): void {
@@ -60,21 +67,6 @@ export class PostTrackingInfosComponent  {
     });
     flightPath.setMap(map);
   }
-  
-  private loadScript(url:string) {
-    return new Promise((resolve, reject) => {
-      const script = this.renderer2.createElement('script');
-      script.type = 'text/javascript';
-      script.src = url;
-      script.text = ``;
-      script.async = true;
-      script.defer = true;
-      script.onload = resolve;
-      script.onerror = reject;
-      this.renderer2.appendChild(this.document.body, script);
-    })
-  }
-
   calculateCenter()
   {
     let sumPos = { lat:0, long:0 }
@@ -90,4 +82,9 @@ export class PostTrackingInfosComponent  {
     return new google.maps.LatLng({lat: sumPos.lat, lng: sumPos.long}, true);
   }
 
+  moveToCalendar() 
+  {
+    this.localStorageService.setFeldkalender(['todo']);
+    this.router.navigate(["/feldkalender"])
+  }
 }

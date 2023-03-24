@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "Description": {
+      "De": "Offene Ackerfläche",
+      "Fr": "Offene Ackerfläche",
+      "It": "Offene Ackerfläche"
+    }
+  },
+  {
+    "Id": 2,
+    "Description": {
+      "De": "Grünfläche",
+      "Fr": "Grünfläche",
+      "It": "Grünfläche"
+    }
+  },
+  {
+    "Id": 3,
+    "Description": {
+      "De": "Flächen mit Dauerkulturen",
+      "Fr": "Flächen mit Dauerkulturen",
+      "It": "Flächen mit Dauerkulturen"
+    }
+  },
+  {
+    "Id": 4,
+    "Description": {
+      "De": "Flächen mit Kulturen in ganzjährig geschütztem Anbau",
+      "Fr": "Flächen mit Kulturen in ganzjährig geschütztem Anbau",
+      "It": "Flächen mit Kulturen in ganzjährig geschütztem Anbau"
+    }
+  },
+  {
+    "Id": 5,
+    "Description": {
+      "De": "Weitere Flächen innerhalb der LN",
+      "Fr": "Weitere Flächen innerhalb der LN",
+      "It": "Weitere Flächen innerhalb der LN"
+    }
+  },
+  {
+    "Id": 6,
+    "Description": {
+      "De": "Bäume",
+      "Fr": "Bäume",
+      "It": "Bäume"
+    }
+  },
+  {
+    "Id": 7,
+    "Description": {
+      "De": "Andere Elemente",
+      "Fr": "Andere Elemente",
+      "It": "Andere Elemente"
+    }
+  }
+]

@@ -25,10 +25,21 @@ h1 {
   font-size: 48px;
 }
 
+.mat-mdc-checkbox.mat-accent{
+    --mdc-checkbox-selected-focus-icon-color: #61775e;
+    --mdc-checkbox-selected-hover-icon-color: #61775e;
+    --mdc-checkbox-selected-icon-color: #61775e;
+    --mdc-checkbox-selected-pressed-icon-color: #61775e;
+    --mdc-checkbox-focus-icon-color: #61775e;
+}
+
 .mat-mdc-raised-button.mat-primary {
   --mdc-protected-button-container-color: #61775e;
 }
 
+
+
 .animation {
   max-width: 100%;
+  margin-top: 2rem;
 }
