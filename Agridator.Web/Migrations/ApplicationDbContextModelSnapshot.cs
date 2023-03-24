@@ -88,6 +88,29 @@ namespace Agridator.Web.Migrations
                     b.ToTable("PlantProtectionProducts");
                 });
 
+            modelBuilder.Entity("Agridator.Web.Data.Entities.TypeOfWork", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Title_de")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title_fr")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title_it")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TypeOfWorks");
+                });
+
             modelBuilder.Entity("Agridator.Web.Data.Entities.UsageType", b =>
                 {
                     b.Property<Guid>("Id")
@@ -106,10 +129,10 @@ namespace Agridator.Web.Migrations
                     b.Property<bool>("SpezialCulture")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ValidFromYear")
+                    b.Property<int?>("ValidFromYear")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ValidToYear")
+                    b.Property<int?>("ValidToYear")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

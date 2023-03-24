@@ -7,3 +7,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   max-width: 45rem;
   margin: auto;
 }
+
+.agridator-content {
+  padding: 0.50rem;
+}
+
+h1 {
+  color: #61775e;
+  font-size: 2.25rem !important;
+  padding-top: 0.50rem;
+}
+
+.mat-icon {
+  color: #61775e;
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 48px;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #61775e;
+}

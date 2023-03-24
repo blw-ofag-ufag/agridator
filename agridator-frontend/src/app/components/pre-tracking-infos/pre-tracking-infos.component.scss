@@ -1,0 +1,14 @@
+.container 
+{
+    max-width: 100%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+mat-divider 
+{
+    margin: 2rem 0;
+}
