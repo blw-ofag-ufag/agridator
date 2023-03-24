@@ -31,7 +31,7 @@
         <mat-form-field *ngIf="showFertilizerList" appearance="fill" hintLabel="Düngemittel auswählen">
           <mat-label>Düngemittel</mat-label>
           <mat-select matNativeControl name="fertilizer" formControlName="fertilizer">
-            <mat-option [value]="item.it" *ngFor="let item of fertilizers">{{item.description}}</mat-option>
+            <mat-option [value]="item.id" *ngFor="let item of fertilizers">{{item.description}}</mat-option>
           </mat-select>
         </mat-form-field>
 
