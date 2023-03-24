@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import  Cultures  from './Cultures.json';
+import  PlantProtectionProducts  from './PlantProtectionProducts.json';
+import  Fertilizers  from './Fertilizers.json';
+import  TypeOfWork  from './TypeOfWork.json';
 import {TranslateService} from "@ngx-translate/core";
 
 
@@ -18,42 +22,36 @@ useLanguage(language: string): void {
   }
 
   // keys are used to determine additional lists in pre-trakcing-infos
-  getActionTypes ()
+  getTypeOfWork ()
   {
-    return [ 
-      {key:"keyA", value: "Dünger - Engrais - Concimi"},
-      {key:"keyB", value: "Pflanzenschutzmittel - Produits phytosanitaires - Prodotti fitosanitari"},
-      {key:"keyC", value: "Action C"}
-    ]
+    return TypeOfWork
   };
 
 
   getOwnedFields()
   {
     return [
-      {key:"keyX", value: "Feld X"},
-      {key:"keyY", value: "Feld Y"},
-      {key:"keyZ", value: "Feld Z"}
+      {key:"keyX", value: "Feld neben Bauernhaus"},
+      {key:"keyY", value: "Feld beim Wald"},
+      {key:"keyZ", value: "Feld gepachtet von Hansruedi"}
     ]
+  }
+
+  getCultures()
+  {
+    return Cultures
   }
 
   getFertilizier()
   {
-    return [
-      {key:"keyfa",value: "Fertilizier A"},
-      {key:"keyfa",value: "Fertilizier B"},
-      {key:"keyfa",value: "Fertilizier C"},
-      {key:"keyfa",value: "Fertilizier D"},
-    ]
+    return Fertilizers
   }
 
   getPlantProtectionProducts()
   {
-    return [
-      {key:"keyPPPA", value:"Pflanzenschutzmittel A"},
-      {key:"keyPPPB", value:"Pflanzenschutzmittel B"},
-      {key:"keyPPPC", value:"Pflanzenschutzmittel C"},
-      {key:"keyPPPD", value:"Pflanzenschutzmittel D"},
-    ]
+    return PlantProtectionProducts
   }
+
+
+  
 }
