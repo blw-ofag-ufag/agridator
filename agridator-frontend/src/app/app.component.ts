@@ -23,6 +23,7 @@ export class AppComponent  {
 
   useLanguage(language: string): void {
     this.translate.use(language); 
+  }
 
   home() {
     this.router.navigate(['home']);
