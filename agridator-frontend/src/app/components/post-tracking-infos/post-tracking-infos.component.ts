@@ -38,7 +38,7 @@ export class PostTrackingInfosComponent {
 
   moveToCalendar() 
   {
-    this.localStorageService.setFeldkalender(this.points);
+    this.localStorageService.setFeldkalender(['todo']);
     this.router.navigate(["/feldkalender"])
   }
 }
