@@ -2,7 +2,7 @@
 GovTech Hackathon Challenge agridator
 
 ## Deploy to GitHub Pages
-- ng run test
+- npm run test
 - test manual
 ```
 cd agridator-frontend
