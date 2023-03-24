@@ -6,9 +6,23 @@
 .container form {
     display: flex;
     flex-direction: column;
+    height: 100%;
+   
   }
 
-mat-divider 
+  mat-divider {
+    margin: 2rem 0 !important;
+  
+}
+
+.nav-bar 
 {
-    margin: 2rem 0;
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+*:host {
+    height: 100%;
 }

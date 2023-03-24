@@ -1,11 +1,13 @@
-<div class="button-wrapper">
-    <button class="btn-big-circle" [ngClass]="{
-    'playing': tracking }" (click)="toggleTracking()">
-        <mat-icon aria-hidden="false" aria-label="TrackingIcon" [fontIcon]="getIcon()"></mat-icon>
-    </button>
-</div>
+<div class="container">
+    <div class="button-wrapper">
+        <button class="btn-big-circle" [ngClass]="{
+        'playing': tracking }" (click)="toggleTracking()">
+            <mat-icon aria-hidden="false" aria-label="TrackingIcon" [fontIcon]="getIcon()"></mat-icon>
+        </button>
+    </div>
 
-<div mat-dialog-actions fxLayout="row" fxLayoutAlign="space-between" style="margin-top: 3rem;">
-    <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">Zurück</button>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button> 
+    <div  fxLayout="row" class="nav-bar" fxLayoutAlign="space-between" >
+        <button mat-raised-button color="primary" type="submit" [disabled]="tracking" (click)="moveToPreTracking()">Zurück</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!hasValidTracking()" (click)="finishTracking()">Weiter</button> 
+    </div>
 </div>
