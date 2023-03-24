@@ -1,29 +1,263 @@
-[{"DWH_SK":1,"PST_DESCRIPTION_DE":"Dünngülle ab Separator","PST_DESCRIPTION_FR":"Lisier liquide de séparateur","PST_DESCRIPTION_IT":"Frazioni liquide di separazione","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":2,"PST_DESCRIPTION_DE":"Eigenprodukt","PST_DESCRIPTION_FR":"Produit particulier","PST_DESCRIPTION_IT":"Proprio prodotto","PST_STATUS":"INACTIVE"},
-{"DWH_SK":3,"PST_DESCRIPTION_DE":"Ernterückstände","PST_DESCRIPTION_FR":"Résidus de culture","PST_DESCRIPTION_IT":"Residui colturali","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":4,"PST_DESCRIPTION_DE":"Festes Gärgut","PST_DESCRIPTION_FR":"Digestat solide","PST_DESCRIPTION_IT":"Digestato solido","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":5,"PST_DESCRIPTION_DE":"Flüssiges Gärgut","PST_DESCRIPTION_FR":"Digestat liquide","PST_DESCRIPTION_IT":"Digestato liquido","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":6,"PST_DESCRIPTION_DE":"Gärdünngülle","PST_DESCRIPTION_FR":"Lisier méthanisé séparé","PST_DESCRIPTION_IT":"Colaticcio fermentato","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":7,"PST_DESCRIPTION_DE":"Gärgülle","PST_DESCRIPTION_FR":"Lisier méthanisé","PST_DESCRIPTION_IT":"Liquame fermentato","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":8,"PST_DESCRIPTION_DE":"Gärgut","PST_DESCRIPTION_FR":"Digestat","PST_DESCRIPTION_IT":"Digestato","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":9,"PST_DESCRIPTION_DE":"Gärmist","PST_DESCRIPTION_FR":"Fumier méthanisé","PST_DESCRIPTION_IT":"Letame fermentato","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":10,"PST_DESCRIPTION_DE":"Gemüserüstabfälle","PST_DESCRIPTION_FR":"Épluchures","PST_DESCRIPTION_IT":"Bucce","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":11,"PST_DESCRIPTION_DE":"Gülle betriebspezifisch (gem Berechnung)","PST_DESCRIPTION_FR":"Lisier spécifique à l'exploitation (selon calcul)","PST_DESCRIPTION_IT":"Liquame specifico dell'azienda (come da calcolo)","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":12,"PST_DESCRIPTION_DE":"Gülle kotarm verdünnt 1:0,5 (nur Rindvieh)","PST_DESCRIPTION_FR":"Lisier pauvre en fèces dilué 1:0,5 (seul. bovins)","PST_DESCRIPTION_IT":"Liquame povero di sterco diluito 1:0,5 (solo bovini)","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":13,"PST_DESCRIPTION_DE":"Gülle unverdünnt","PST_DESCRIPTION_FR":"Lisier non dilué","PST_DESCRIPTION_IT":"Liquame non diluito","PST_STATUS":"INACTIVE"},
-{"DWH_SK":14,"PST_DESCRIPTION_DE":"Gülle Verdünnung 1:0.25","PST_DESCRIPTION_FR":"Lisier dilué 1:0.25","PST_DESCRIPTION_IT":"Liquame diluito 1:0.25","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":15,"PST_DESCRIPTION_DE":"Gülle Verdünnung 1:0.5","PST_DESCRIPTION_FR":"Lisier dilué 1:0.5","PST_DESCRIPTION_IT":"Liquame diluito 1:0.5","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":16,"PST_DESCRIPTION_DE":"Gülle Verdünnung 1:1","PST_DESCRIPTION_FR":"Lisier dilué 1:1","PST_DESCRIPTION_IT":"Liquame diluito 1:1","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":17,"PST_DESCRIPTION_DE":"Kompost","PST_DESCRIPTION_FR":"Compost","PST_DESCRIPTION_IT":"Compost","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":18,"PST_DESCRIPTION_DE":"Laufstallmist","PST_DESCRIPTION_FR":"Fumier de stabulation","PST_DESCRIPTION_IT":"Letame da stabulazione","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":19,"PST_DESCRIPTION_DE":"Mischgülle","PST_DESCRIPTION_FR":"Mélange de lisier","PST_DESCRIPTION_IT":"Liquame misto","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":20,"PST_DESCRIPTION_DE":"Mist","PST_DESCRIPTION_FR":"Fumier","PST_DESCRIPTION_IT":"Letame","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":21,"PST_DESCRIPTION_DE":"Mist betriebspezifisch (gem Berechnung)","PST_DESCRIPTION_FR":"Fumier spécifique à l'exploitation (selon calcul)","PST_DESCRIPTION_IT":"Letame specifico dell'azienda (come da calcolo)","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":22,"PST_DESCRIPTION_DE":"Mist frisch","PST_DESCRIPTION_FR":"Fumier frais","PST_DESCRIPTION_IT":"Letame fresco","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":23,"PST_DESCRIPTION_DE":"Mist verflüssigt","PST_DESCRIPTION_FR":"Fumier liquéfié","PST_DESCRIPTION_IT":"Letame liquefatto","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":24,"PST_DESCRIPTION_DE":"Mist verrottet","PST_DESCRIPTION_FR":"Fumier mûr","PST_DESCRIPTION_IT":"Letame maturo","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":25,"PST_DESCRIPTION_DE":"Mistkompost betriebspezifisch (gem Berechnung)","PST_DESCRIPTION_FR":"Fumier compost spécifique à l'exploitation (selon calcul)","PST_DESCRIPTION_IT":"Compost di letame","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":26,"PST_DESCRIPTION_DE":"Mistmischung","PST_DESCRIPTION_FR":"Mélange de fumier","PST_DESCRIPTION_IT":"Letame misto","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":27,"PST_DESCRIPTION_DE":"Nährstoffkonzentrat","PST_DESCRIPTION_FR":"Concentrat d’éléments nutritifs","PST_DESCRIPTION_IT":"Concentrato di nutrienti","PST_STATUS":"RECYCLINGDUENGER"},
-{"DWH_SK":28,"PST_DESCRIPTION_DE":"Separatormist","PST_DESCRIPTION_FR":"Fumier de séparateur","PST_DESCRIPTION_IT":"Frazioni solide di separazione","PST_STATUS":"HOFDUENGER"},
-{"DWH_SK":29,"PST_DESCRIPTION_DE":"Stapelmist","PST_DESCRIPTION_FR":"Fumier au tas","PST_DESCRIPTION_IT":"Letame di mucchio","PST_STATUS":"HOFDUENGER"}]
+[
+  {
+    "DWH_SK": 1,
+    "Description": {
+      "De": "Dünngülle ab Separator",
+      "Fr": "Lisier liquide de séparateur",
+      "It": "Frazioni liquide di separazione",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 2,
+    "Description": {
+      "De": "Eigenprodukt",
+      "Fr": "Produit particulier",
+      "It": "Proprio prodotto",
+      "PST_STATUS": "INACTIVE"
+    }
+  },
+  {
+    "DWH_SK": 3,
+    "Description": {
+      "De": "Ernterückstände",
+      "Fr": "Résidus de culture",
+      "It": "Residui colturali",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 4,
+    "Description": {
+      "De": "Festes Gärgut",
+      "Fr": "Digestat solide",
+      "It": "Digestato solido",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 5,
+    "Description": {
+      "De": "Flüssiges Gärgut",
+      "Fr": "Digestat liquide",
+      "It": "Digestato liquido",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 6,
+    "Description": {
+      "De": "Gärdünngülle",
+      "Fr": "Lisier méthanisé séparé",
+      "It": "Colaticcio fermentato",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 7,
+    "Description": {
+      "De": "Gärgülle",
+      "Fr": "Lisier méthanisé",
+      "It": "Liquame fermentato",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 8,
+    "Description": {
+      "De": "Gärgut",
+      "Fr": "Digestat",
+      "It": "Digestato",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 9,
+    "Description": {
+      "De": "Gärmist",
+      "Fr": "Fumier méthanisé",
+      "It": "Letame fermentato",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 10,
+    "Description": {
+      "De": "Gemüserüstabfälle",
+      "Fr": "Épluchures",
+      "It": "Bucce",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 11,
+    "Description": {
+      "De": "Gülle betriebspezifisch (gem Berechnung)",
+      "Fr": "Lisier spécifique à l'exploitation (selon calcul)",
+      "It": "Liquame specifico dell'azienda (come da calcolo)",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 12,
+    "Description": {
+      "De": "Gülle kotarm verdünnt 1:0,5 (nur Rindvieh)",
+      "Fr": "Lisier pauvre en fèces dilué 1:0,5 (seul. bovins)",
+      "It": "Liquame povero di sterco diluito 1:0,5 (solo bovini)",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 13,
+    "Description": {
+      "De": "Gülle unverdünnt",
+      "Fr": "Lisier non dilué",
+      "It": "Liquame non diluito",
+      "PST_STATUS": "INACTIVE"
+    }
+  },
+  {
+    "DWH_SK": 14,
+    "Description": {
+      "De": "Gülle Verdünnung 1:0.25",
+      "Fr": "Lisier dilué 1:0.25",
+      "It": "Liquame diluito 1:0.25",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 15,
+    "Description": {
+      "De": "Gülle Verdünnung 1:0.5",
+      "Fr": "Lisier dilué 1:0.5",
+      "It": "Liquame diluito 1:0.5",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 16,
+    "Description": {
+      "De": "Gülle Verdünnung 1:1",
+      "Fr": "Lisier dilué 1:1",
+      "It": "Liquame diluito 1:1",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 17,
+    "Description": {
+      "De": "Kompost",
+      "Fr": "Compost",
+      "It": "Compost",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 18,
+    "Description": {
+      "De": "Laufstallmist",
+      "Fr": "Fumier de stabulation",
+      "It": "Letame da stabulazione",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 19,
+    "Description": {
+      "De": "Mischgülle",
+      "Fr": "Mélange de lisier",
+      "It": "Liquame misto",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 20,
+    "Description": {
+      "De": "Mist",
+      "Fr": "Fumier",
+      "It": "Letame",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 21,
+    "Description": {
+      "De": "Mist betriebspezifisch (gem Berechnung)",
+      "Fr": "Fumier spécifique à l'exploitation (selon calcul)",
+      "It": "Letame specifico dell'azienda (come da calcolo)",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 22,
+    "Description": {
+      "De": "Mist frisch",
+      "Fr": "Fumier frais",
+      "It": "Letame fresco",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 23,
+    "Description": {
+      "De": "Mist verflüssigt",
+      "Fr": "Fumier liquéfié",
+      "It": "Letame liquefatto",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 24,
+    "Description": {
+      "De": "Mist verrottet",
+      "Fr": "Fumier mûr",
+      "It": "Letame maturo",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 25,
+    "Description": {
+      "De": "Mistkompost betriebspezifisch (gem Berechnung)",
+      "Fr": "Fumier compost spécifique à l'exploitation (selon calcul)",
+      "It": "Compost di letame",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 26,
+    "Description": {
+      "De": "Mistmischung",
+      "Fr": "Mélange de fumier",
+      "It": "Letame misto",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 27,
+    "Description": {
+      "De": "Nährstoffkonzentrat",
+      "Fr": "Concentrat d’éléments nutritifs",
+      "It": "Concentrato di nutrienti",
+      "PST_STATUS": "RECYCLINGDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 28,
+    "Description": {
+      "De": "Separatormist",
+      "Fr": "Fumier de séparateur",
+      "It": "Frazioni solide di separazione",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  },
+  {
+    "DWH_SK": 29,
+    "Description": {
+      "De": "Stapelmist",
+      "Fr": "Fumier au tas",
+      "It": "Letame di mucchio",
+      "PST_STATUS": "HOFDUENGER"
+    }
+  }
+]

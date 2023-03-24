@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@angular/material": "^15.2.3",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0"
+  }
+}
