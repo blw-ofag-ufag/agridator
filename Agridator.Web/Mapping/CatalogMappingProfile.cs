@@ -19,7 +19,8 @@ namespace Agridator.Web.Mapping
 
       CreateMap<PlantProtectionProduct, PlantProtectionProductModel>();
 
-      CreateMap<TypeOfWork, TypeOfWorkModel>();
+      var typeOfWorkMap = CreateMap<TypeOfWork, TypeOfWorkModel>();
+      typeOfWorkMap.ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Title.Value));
 
       var usageTypesFromDB = CreateMap<UsageType, UsageTypeModel>();
       usageTypesFromDB.ForMember(dest => dest.Nutzung, opt => opt.MapFrom(src => src.Nutzung.Value));

@@ -6,10 +6,6 @@ namespace Agridator.Web.Models
   {
     public int Id { get; set; }
 
-    public string Title_de { get; set; } = string.Empty;
-
-    public string Title_fr { get; set; } = string.Empty;
-
-    public string Title_it { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
   }
 }
