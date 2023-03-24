@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { TrackingComponent } from './tracking.component';
 
@@ -11,7 +13,9 @@ describe('TrackingComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ TrackingComponent ],
       imports: [
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatIconModule,
+        TranslateModule.forRoot()
       ]
     })
     .compileComponents();
