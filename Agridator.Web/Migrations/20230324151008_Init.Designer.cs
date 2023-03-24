@@ -5,32 +5,39 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace Agridator.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230323170052_Initial")]
-    partial class Initial
+    [Migration("20230324151008_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.4");
+            modelBuilder
+                .HasAnnotation("ProductVersion", "7.0.4")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("Agridator.Web.Data.Entities.Culture", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CatId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Cultureode")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -43,7 +50,9 @@ namespace Agridator.Web.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.HasKey("Id");
 
@@ -54,11 +63,13 @@ namespace Agridator.Web.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -69,53 +80,70 @@ namespace Agridator.Web.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ActiveSubstances")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("CompanyName")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text");
 
                     b.Property<int>("WNr")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.ToTable("PlantProtectionProducts");
                 });
 
-            modelBuilder.Entity("Agridator.Web.Data.Entities.UsageType", b =>
+            modelBuilder.Entity("Agridator.Web.Data.Entities.TypeOfWork", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("integer");
 
-                    b.Property<bool>("BffQi")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Code")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Overlaying")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("SpezialCulture")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ValidFromYear")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ValidToYear")
-                        .HasColumnType("INTEGER");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.HasKey("Id");
+
+                    b.ToTable("TypeOfWorks");
+                });
+
+            modelBuilder.Entity("Agridator.Web.Data.Entities.UsageType", b =>
+                {
+                    b.Property<int>("Code")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Code"));
+
+                    b.Property<int>("BffQi")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Overlaying")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SpezialCulture")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("ValidFromYear")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("ValidToYear")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Code");
 
                     b.ToTable("UsageTypes");
                 });
@@ -131,19 +159,19 @@ namespace Agridator.Web.Migrations
                     b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Description", b1 =>
                         {
                             b1.Property<int>("CultureId")
-                                .HasColumnType("INTEGER");
+                                .HasColumnType("integer");
 
                             b1.Property<string>("De")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("Fr")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("It")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.HasKey("CultureId");
 
@@ -164,19 +192,19 @@ namespace Agridator.Web.Migrations
                     b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Description", b1 =>
                         {
                             b1.Property<int>("CultureCategoryId")
-                                .HasColumnType("INTEGER");
+                                .HasColumnType("integer");
 
                             b1.Property<string>("De")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("Fr")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("It")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.HasKey("CultureCategoryId");
 
@@ -195,19 +223,19 @@ namespace Agridator.Web.Migrations
                     b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Description", b1 =>
                         {
                             b1.Property<int>("FertilizerId")
-                                .HasColumnType("INTEGER");
+                                .HasColumnType("integer");
 
                             b1.Property<string>("De")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("Fr")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("It")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.HasKey("FertilizerId");
 
@@ -221,31 +249,62 @@ namespace Agridator.Web.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Agridator.Web.Data.Entities.TypeOfWork", b =>
+                {
+                    b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Title", b1 =>
+                        {
+                            b1.Property<int>("TypeOfWorkId")
+                                .HasColumnType("integer");
+
+                            b1.Property<string>("De")
+                                .HasMaxLength(8000)
+                                .HasColumnType("character varying(8000)");
+
+                            b1.Property<string>("Fr")
+                                .HasMaxLength(8000)
+                                .HasColumnType("character varying(8000)");
+
+                            b1.Property<string>("It")
+                                .HasMaxLength(8000)
+                                .HasColumnType("character varying(8000)");
+
+                            b1.HasKey("TypeOfWorkId");
+
+                            b1.ToTable("TypeOfWorks");
+
+                            b1.WithOwner()
+                                .HasForeignKey("TypeOfWorkId");
+                        });
+
+                    b.Navigation("Title")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Agridator.Web.Data.Entities.UsageType", b =>
                 {
                     b.OwnsOne("Agridator.Web.Data.Entities.LocalizedStringSet", "Nutzung", b1 =>
                         {
-                            b1.Property<Guid>("UsageTypeId")
-                                .HasColumnType("TEXT");
+                            b1.Property<int>("UsageTypeCode")
+                                .HasColumnType("integer");
 
                             b1.Property<string>("De")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("Fr")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
                             b1.Property<string>("It")
                                 .HasMaxLength(8000)
-                                .HasColumnType("TEXT");
+                                .HasColumnType("character varying(8000)");
 
-                            b1.HasKey("UsageTypeId");
+                            b1.HasKey("UsageTypeCode");
 
                             b1.ToTable("UsageTypes");
 
                             b1.WithOwner()
-                                .HasForeignKey("UsageTypeId");
+                                .HasForeignKey("UsageTypeCode");
                         });
 
                     b.Navigation("Nutzung")

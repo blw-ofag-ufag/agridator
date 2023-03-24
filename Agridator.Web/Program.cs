@@ -56,6 +56,7 @@ using (var scope = app.Services.CreateScope())
     }
     catch (Exception ex)
     {
+        //
         //nope
     }
 }
