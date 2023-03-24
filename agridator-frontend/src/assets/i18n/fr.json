@@ -1,10 +1,14 @@
 {
-	"post-tracking": "",
+	"feldkalender.Title": "Carnets des champs",
+	"pre-tracking.FeldAuswaehlen": "Choisir le terrain",
 	"pre-tracking.Fertilizer": "Engrais",
+	"pre-tracking.MockWorktypeDuengen": "Mettre de l'engrais",
 	"pre-tracking.PlantProtection": "Produits phytosanitaires",
 	"pre-tracking.Plants": "Cultures",
+	"pre-tracking.PlantsFields": "Terrain",
 	"pre-tracking.Sprache": "FR",
 	"pre-tracking.WelcomeText": "Exemple",
 	"pre-tracking.Worktype": "",
+	"settings.Title": "Paramètres",
 	"tracking": ""
 }

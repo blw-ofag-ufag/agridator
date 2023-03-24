@@ -7,6 +7,7 @@ import { DataService } from './../../service/data.service';
 import { ApiService } from '../../api.service';
 
 const USE_API = false;
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class PreTrackingInfosComponent implements OnInit {
   plantProtectionProducts: any[] = [];
   form: FormGroup = new FormGroup({});
 
-  constructor(private apiService: ApiService, private dataService: DataService, private fb: FormBuilder, private router: Router) {
+  constructor(private apiService: ApiService, private dataService: DataService, private fb: FormBuilder, private router: Router, private translate: TranslateService) {
     this.ownedFields = this.dataService.getOwnedFields();
     if(!USE_API){
       this.workTypes = this.dataService.getTypeOfWork();
@@ -38,6 +39,10 @@ export class PreTrackingInfosComponent implements OnInit {
     }
 
   }
+
+useLanguage(language: string): void {
+this.translate.use(language); 
+}
 
   ngOnInit(): void {
     this.form = this.fb.group({
