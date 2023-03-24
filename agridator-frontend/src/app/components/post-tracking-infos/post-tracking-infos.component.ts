@@ -22,7 +22,7 @@ export class PostTrackingInfosComponent {
     {
       this.config = state['config'];
       this.points = state['points'];
-      this.workTypes = this.dataService.getActionTypes();
+      this.workTypes = this.dataService.getTypeOfWork();
       this.ownedFields = this.dataService.getOwnedFields();
       this.fertilizers = this.dataService.getFertilizier();
       this.plantProtectionProducts = this.dataService.getPlantProtectionProducts();
