@@ -21,27 +21,31 @@ namespace Agridator.Web.Controllers
     }
 
     [HttpGet ("TypeOfWork")]
-    public IActionResult GetTypeOfWorkList()
+    public async Task<IActionResult> GetTypeOfWorkList()
     {
-      throw new NotImplementedException();
+      var typeOfWorksFromDB = await _dbContext.TypeOfWorks.ToListAsync().ConfigureAwait(false);
+      return Ok(_mapper.Map<IEnumerable<TypeOfWorkModel>>(typeOfWorksFromDB));
     }
 
     [HttpGet("UsageTypes")]
-    public IActionResult GetUseageTypes ()
+    public async Task<IActionResult> GetUseageTypes ()
     {
-      throw new NotImplementedException ();
+      var usageTypesFromDB = await _dbContext.UsageTypes.ToListAsync().ConfigureAwait(false);
+      return Ok(_mapper.Map<IEnumerable<UsageTypeModel>>(usageTypesFromDB));
     }
 
     [HttpGet ("PlantProtectionProducts")]
-    public IActionResult GetPlantProtectionProducts ()
-    { 
-      throw new NotImplementedException ();
+    public async Task<IActionResult> GetPlantProtectionProducts ()
+    {
+      var plantProtectionProductsFromDB = await _dbContext.PlantProtectionProducts.ToListAsync().ConfigureAwait(false);
+      return Ok(_mapper.Map<IEnumerable<PlantProtectionProductModel>>(plantProtectionProductsFromDB));
     }
 
     [HttpGet ("Fertilizers")]
-    public IActionResult GetFertilizers ()
+    public async Task<IActionResult> GetFertilizers ()
     {
-      throw new NotImplementedException ();
+      var fertilizersFromDB = await _dbContext.Fertilizers.ToListAsync().ConfigureAwait (false);
+      return Ok(_mapper.Map<IEnumerable<FertilizerModel>>(fertilizersFromDB));
     }
 
     [HttpGet ("Cultures")]
@@ -52,9 +56,10 @@ namespace Agridator.Web.Controllers
     }
 
     [HttpGet ("CultureCategories")]
-    public IActionResult GetCultureCategories ()
+    public async Task<IActionResult> GetCultureCategories ()
     {
-      throw new NotImplementedException ();
+      var cultureCategoriesFromDB = await _dbContext.CultureCategories.ToListAsync().ConfigureAwait(false);
+      return Ok(_mapper.Map<IEnumerable<CultureCategoryModel>>(cultureCategoriesFromDB));
     }
   }
 }
