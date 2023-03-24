@@ -1,149 +1,1492 @@
-[{"Id":1,"CatId":1,"Cultureode":536,"Description_de":"Ackerbohnen zu Futterzwecken","Description_fr":"Ackerbohnen zu Futterzwecken","Description_it":"Ackerbohnen zu Futterzwecken"},
-{"Id":2,"CatId":1,"Cultureode":555,"Description_de":"Ackerschonstreifen","Description_fr":"Ackerschonstreifen","Description_it":"Ackerschonstreifen"},
-{"Id":3,"CatId":1,"Cultureode":565,"Description_de":"Ackerschonstreifen Getreide","Description_fr":"Ackerschonstreifen Getreide","Description_it":"Ackerschonstreifen Getreide"},
-{"Id":4,"CatId":1,"Cultureode":571,"Description_de":"Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)","Description_fr":"Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)","Description_it":"Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)"},
-{"Id":5,"CatId":1,"Cultureode":564,"Description_de":"Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)","Description_fr":"Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)","Description_it":"Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)"},
-{"Id":6,"CatId":1,"Cultureode":577,"Description_de":"Anderer Hanf","Description_fr":"Anderer Hanf","Description_it":"Anderer Hanf"},
-{"Id":7,"CatId":1,"Cultureode":572,"Description_de":"Blühstreifen für Bestäuber und andere Nützlinge","Description_fr":"Blühstreifen für Bestäuber und andere Nützlinge","Description_it":"Blühstreifen für Bestäuber und andere Nützlinge"},
-{"Id":8,"CatId":1,"Cultureode":548,"Description_de":"Buchweizen","Description_fr":"Buchweizen","Description_it":"Buchweizen"},
-{"Id":9,"CatId":1,"Cultureode":556,"Description_de":"Buntbrache","Description_fr":"Buntbrache","Description_it":"Buntbrache"},
-{"Id":10,"CatId":1,"Cultureode":516,"Description_de":"Dinkel","Description_fr":"Dinkel","Description_it":"Dinkel"},
-{"Id":11,"CatId":1,"Cultureode":551,"Description_de":"Einjährige Beeren (z.B. Erdbeeren)","Description_fr":"Einjährige Beeren (z.B. Erdbeeren)","Description_it":"Einjährige Beeren (z.B. Erdbeeren)"},
-{"Id":12,"CatId":1,"Cultureode":545,"Description_de":"Einjährige Freilandgemüse (ohne Konservengemüse)","Description_fr":"Einjährige Freilandgemüse (ohne Konservengemüse)","Description_it":"Einjährige Freilandgemüse (ohne Konservengemüse)"},
-{"Id":13,"CatId":1,"Cultureode":554,"Description_de":"Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)","Description_fr":"Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)","Description_it":"Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)"},
-{"Id":14,"CatId":1,"Cultureode":553,"Description_de":"Einjährige Gewürz- und Medizinalpflanzen","Description_fr":"Einjährige Gewürz- und Medizinalpflanzen","Description_it":"Einjährige Gewürz- und Medizinalpflanzen"},
-{"Id":15,"CatId":1,"Cultureode":552,"Description_de":"Einjährige nachwachsende Rohstoffe (Kenaf, usw.)","Description_fr":"Einjährige nachwachsende Rohstoffe (Kenaf, usw.)","Description_it":"Einjährige nachwachsende Rohstoffe (Kenaf, usw.)"},
-{"Id":16,"CatId":1,"Cultureode":537,"Description_de":"Eiweisserbsen zu Futterzwecken","Description_fr":"Eiweisserbsen zu Futterzwecken","Description_it":"Eiweisserbsen zu Futterzwecken"},
-{"Id":17,"CatId":1,"Cultureode":511,"Description_de":"Emmer, Einkorn","Description_fr":"Emmer, Einkorn","Description_it":"Emmer, Einkorn"},
-{"Id":18,"CatId":1,"Cultureode":546,"Description_de":"Freiland-Konservengemüse","Description_fr":"Freiland-Konservengemüse","Description_it":"Freiland-Konservengemüse"},
-{"Id":19,"CatId":1,"Cultureode":523,"Description_de":"Futterrüben","Description_fr":"Futterrüben","Description_it":"Futterrüben"},
-{"Id":20,"CatId":1,"Cultureode":507,"Description_de":"Futterweizen gemäss Sortenliste swiss granum","Description_fr":"Futterweizen gemäss Sortenliste swiss granum","Description_it":"Futterweizen gemäss Sortenliste swiss granum"},
-{"Id":21,"CatId":1,"Cultureode":517,"Description_de":"Getreide für die Saatgutproduktion","Description_fr":"Getreide für die Saatgutproduktion","Description_it":"Getreide für die Saatgutproduktion"},
-{"Id":22,"CatId":1,"Cultureode":543,"Description_de":"Getreide siliert","Description_fr":"Getreide siliert","Description_it":"Getreide siliert"},
-{"Id":23,"CatId":1,"Cultureode":558,"Description_de":"Grünbrache (nur 1999)","Description_fr":"Grünbrache (nur 1999)","Description_it":"Grünbrache (nur 1999)"},
-{"Id":24,"CatId":1,"Cultureode":504,"Description_de":"Hafer","Description_fr":"Hafer","Description_it":"Hafer"},
-{"Id":25,"CatId":1,"Cultureode":533,"Description_de":"Hanf (andere Sorten)","Description_fr":"Hanf (andere Sorten)","Description_it":"Hanf (andere Sorten)"},
-{"Id":26,"CatId":1,"Cultureode":535,"Description_de":"Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)","Description_fr":"Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)","Description_it":"Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)"},
-{"Id":27,"CatId":1,"Cultureode":532,"Description_de":"Hanf (THC-arme Sorten nach BLW-Sortenliste)","Description_fr":"Hanf (THC-arme Sorten nach BLW-Sortenliste)","Description_it":"Hanf (THC-arme Sorten nach BLW-Sortenliste)"},
-{"Id":28,"CatId":1,"Cultureode":576,"Description_de":"Hanf zur Fasernutzung","Description_fr":"Hanf zur Fasernutzung","Description_it":"Hanf zur Fasernutzung"},
-{"Id":29,"CatId":1,"Cultureode":575,"Description_de":"Hanf zur Nutzung der Samen","Description_fr":"Hanf zur Nutzung der Samen","Description_it":"Hanf zur Nutzung der Samen"},
-{"Id":30,"CatId":1,"Cultureode":542,"Description_de":"Hirse","Description_fr":"Hirse","Description_it":"Hirse"},
-{"Id":31,"CatId":1,"Cultureode":524,"Description_de":"Kartoffeln","Description_fr":"Kartoffeln","Description_it":"Kartoffeln"},
-{"Id":32,"CatId":1,"Cultureode":508,"Description_de":"Körnermais","Description_fr":"Körnermais","Description_it":"Körnermais"},
-{"Id":33,"CatId":1,"Cultureode":534,"Description_de":"Lein","Description_fr":"Lein","Description_it":"Lein"},
-{"Id":34,"CatId":1,"Cultureode":544,"Description_de":"Leindotter","Description_fr":"Leindotter","Description_it":"Leindotter"},
-{"Id":35,"CatId":1,"Cultureode":568,"Description_de":"Linsen","Description_fr":"Linsen","Description_it":"Linsen"},
-{"Id":36,"CatId":1,"Cultureode":538,"Description_de":"Lupinen zu Futterzwecken","Description_fr":"Lupinen zu Futterzwecken","Description_it":"Lupinen zu Futterzwecken"},
-{"Id":37,"CatId":1,"Cultureode":515,"Description_de":"Mischel Brotgetreide","Description_fr":"Mischel Brotgetreide","Description_it":"Mischel Brotgetreide"},
-{"Id":38,"CatId":1,"Cultureode":506,"Description_de":"Mischel Futtergetreide","Description_fr":"Mischel Futtergetreide","Description_it":"Mischel Futtergetreide"},
-{"Id":39,"CatId":1,"Cultureode":569,"Description_de":"Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)","Description_fr":"Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)","Description_it":"Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)"},
-{"Id":40,"CatId":1,"Cultureode":566,"Description_de":"Mohn","Description_fr":"Mohn","Description_it":"Mohn"},
-{"Id":41,"CatId":1,"Cultureode":539,"Description_de":"Oelkürbisse","Description_fr":"Oelkürbisse","Description_it":"Oelkürbisse"},
-{"Id":42,"CatId":1,"Cultureode":594,"Description_de":"Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)"},
-{"Id":43,"CatId":1,"Cultureode":525,"Description_de":"Pflanzkartoffeln (Vertragsanbau)","Description_fr":"Pflanzkartoffeln (Vertragsanbau)","Description_it":"Pflanzkartoffeln (Vertragsanbau)"},
-{"Id":44,"CatId":1,"Cultureode":562,"Description_de":"Phacelia für die Samenproduktion (Vertragsanbau)","Description_fr":"Phacelia für die Samenproduktion (Vertragsanbau)","Description_it":"Phacelia für die Samenproduktion (Vertragsanbau)"},
-{"Id":45,"CatId":1,"Cultureode":574,"Description_de":"Quinoa","Description_fr":"Quinoa","Description_it":"Quinoa"},
-{"Id":46,"CatId":1,"Cultureode":509,"Description_de":"Reis","Description_fr":"Reis","Description_it":"Reis"},
-{"Id":47,"CatId":1,"Cultureode":514,"Description_de":"Roggen","Description_fr":"Roggen","Description_it":"Roggen"},
-{"Id":48,"CatId":1,"Cultureode":557,"Description_de":"Rotationsbrache","Description_fr":"Rotationsbrache","Description_it":"Rotationsbrache"},
-{"Id":49,"CatId":1,"Cultureode":561,"Description_de":"Rübsen für die Samenproduktion (Vertragsanbau)","Description_fr":"Rübsen für die Samenproduktion (Vertragsanbau)","Description_it":"Rübsen für die Samenproduktion (Vertragsanbau)"},
-{"Id":50,"CatId":1,"Cultureode":519,"Description_de":"Saatmais (Vertragsanbau)","Description_fr":"Saatmais (Vertragsanbau)","Description_it":"Saatmais (Vertragsanbau)"},
-{"Id":51,"CatId":1,"Cultureode":567,"Description_de":"Saflor","Description_fr":"Saflor","Description_it":"Saflor"},
-{"Id":52,"CatId":1,"Cultureode":559,"Description_de":"Saum auf Ackerfläche","Description_fr":"Saum auf Ackerfläche","Description_it":"Saum auf Ackerfläche"},
-{"Id":53,"CatId":1,"Cultureode":573,"Description_de":"Senf","Description_fr":"Senf","Description_it":"Senf"},
-{"Id":54,"CatId":1,"Cultureode":521,"Description_de":"Silo- und Grünmais","Description_fr":"Silo- und Grünmais","Description_it":"Silo- und Grünmais"},
-{"Id":55,"CatId":1,"Cultureode":528,"Description_de":"Soja","Description_fr":"Soja","Description_it":"Soja"},
-{"Id":56,"CatId":1,"Cultureode":501,"Description_de":"Sommergerste","Description_fr":"Sommergerste","Description_it":"Sommergerste"},
-{"Id":57,"CatId":1,"Cultureode":590,"Description_de":"Sommerraps als nachwachsender Rohstoff","Description_fr":"Sommerraps als nachwachsender Rohstoff","Description_it":"Sommerraps als nachwachsender Rohstoff"},
-{"Id":58,"CatId":1,"Cultureode":526,"Description_de":"Sommerraps zur Speiseölgewinnung","Description_fr":"Sommerraps zur Speiseölgewinnung","Description_it":"Sommerraps zur Speiseölgewinnung"},
-{"Id":59,"CatId":1,"Cultureode":512,"Description_de":"Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)","Description_fr":"Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)","Description_it":"Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)"},
-{"Id":60,"CatId":1,"Cultureode":592,"Description_de":"Sonnenblumen als nachwachsender Rohstoff","Description_fr":"Sonnenblumen als nachwachsender Rohstoff","Description_it":"Sonnenblumen als nachwachsender Rohstoff"},
-{"Id":61,"CatId":1,"Cultureode":531,"Description_de":"Sonnenblumen zur Speiseölgewinnung","Description_fr":"Sonnenblumen zur Speiseölgewinnung","Description_it":"Sonnenblumen zur Speiseölgewinnung"},
-{"Id":62,"CatId":1,"Cultureode":549,"Description_de":"Sorghum","Description_fr":"Sorghum","Description_it":"Sorghum"},
-{"Id":63,"CatId":1,"Cultureode":541,"Description_de":"Tabak","Description_fr":"Tabak","Description_it":"Tabak"},
-{"Id":64,"CatId":1,"Cultureode":505,"Description_de":"Triticale","Description_fr":"Triticale","Description_it":"Triticale"},
-{"Id":65,"CatId":1,"Cultureode":563,"Description_de":"Übrige Kulturen für die Samenproduktion (Vertragsanbau)","Description_fr":"Übrige Kulturen für die Samenproduktion (Vertragsanbau)","Description_it":"Übrige Kulturen für die Samenproduktion (Vertragsanbau)"},
-{"Id":66,"CatId":1,"Cultureode":597,"Description_de":"Übrige offene Ackerfläche, beitragsberechtigt","Description_fr":"Übrige offene Ackerfläche, beitragsberechtigt","Description_it":"Übrige offene Ackerfläche, beitragsberechtigt"},
-{"Id":67,"CatId":1,"Cultureode":598,"Description_de":"Übrige offene Ackerfläche, nicht beitragsberechtigt","Description_fr":"Übrige offene Ackerfläche, nicht beitragsberechtigt","Description_it":"Übrige offene Ackerfläche, nicht beitragsberechtigt"},
-{"Id":68,"CatId":1,"Cultureode":595,"Description_de":"Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)"},
-{"Id":69,"CatId":1,"Cultureode":502,"Description_de":"Wintergerste","Description_fr":"Wintergerste","Description_it":"Wintergerste"},
-{"Id":70,"CatId":1,"Cultureode":591,"Description_de":"Winterraps als nachwachsender Rohstoff","Description_fr":"Winterraps als nachwachsender Rohstoff","Description_it":"Winterraps als nachwachsender Rohstoff"},
-{"Id":71,"CatId":1,"Cultureode":527,"Description_de":"Winterraps zur Speiseölgewinnung","Description_fr":"Winterraps zur Speiseölgewinnung","Description_it":"Winterraps zur Speiseölgewinnung"},
-{"Id":72,"CatId":1,"Cultureode":513,"Description_de":"Winterweizen (ohne Futterweizen der Sortenliste swiss granum)","Description_fr":"Winterweizen (ohne Futterweizen der Sortenliste swiss granum)","Description_it":"Winterweizen (ohne Futterweizen der Sortenliste swiss granum)"},
-{"Id":73,"CatId":1,"Cultureode":547,"Description_de":"Wurzeln der Treibzichorie","Description_fr":"Wurzeln der Treibzichorie","Description_it":"Wurzeln der Treibzichorie"},
-{"Id":74,"CatId":1,"Cultureode":522,"Description_de":"Zuckerrüben","Description_fr":"Zuckerrüben","Description_it":"Zuckerrüben"},
-{"Id":75,"CatId":2,"Cultureode":617,"Description_de":"Extensiv genutzte Weiden","Description_fr":"Extensiv genutzte Weiden","Description_it":"Extensiv genutzte Weiden"},
-{"Id":76,"CatId":2,"Cultureode":611,"Description_de":"Extensiv genutzte Wiesen (ohne Weiden)","Description_fr":"Extensiv genutzte Wiesen (ohne Weiden)","Description_it":"Extensiv genutzte Wiesen (ohne Weiden)"},
-{"Id":77,"CatId":2,"Cultureode":632,"Description_de":"Futtergräser für die Samenproduktion (Vertragsanbau)","Description_fr":"Futtergräser für die Samenproduktion (Vertragsanbau)","Description_it":"Futtergräser für die Samenproduktion (Vertragsanbau)"},
-{"Id":78,"CatId":2,"Cultureode":631,"Description_de":"Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)","Description_fr":"Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)","Description_it":"Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)"},
-{"Id":79,"CatId":2,"Cultureode":622,"Description_de":"Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese","Description_fr":"Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese","Description_it":"Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese"},
-{"Id":80,"CatId":2,"Cultureode":623,"Description_de":"Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese","Description_fr":"Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese","Description_it":"Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese"},
-{"Id":81,"CatId":2,"Cultureode":621,"Description_de":"Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)","Description_fr":"Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)","Description_it":"Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)"},
-{"Id":82,"CatId":2,"Cultureode":601,"Description_de":"Kunstwiesen (ohne Weiden)","Description_fr":"Kunstwiesen (ohne Weiden)","Description_it":"Kunstwiesen (ohne Weiden)"},
-{"Id":83,"CatId":2,"Cultureode":695,"Description_de":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche)","Description_fr":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche)","Description_it":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche)"},
-{"Id":84,"CatId":2,"Cultureode":694,"Description_de":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)","Description_fr":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)","Description_it":"Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)"},
-{"Id":85,"CatId":2,"Cultureode":693,"Description_de":"Regionsspezifische Biodiversitätsförderfläche (Weiden)","Description_fr":"Regionsspezifische Biodiversitätsförderfläche (Weiden)","Description_it":"Regionsspezifische Biodiversitätsförderfläche (Weiden)"},
-{"Id":86,"CatId":2,"Cultureode":613,"Description_de":"Übrige Dauerwiesen (ohne Weiden)","Description_fr":"Übrige Dauerwiesen (ohne Weiden)","Description_it":"Übrige Dauerwiesen (ohne Weiden)"},
-{"Id":87,"CatId":2,"Cultureode":633,"Description_de":"Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)","Description_fr":"Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)","Description_it":"Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)"},
-{"Id":88,"CatId":2,"Cultureode":697,"Description_de":"Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt","Description_fr":"Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt","Description_it":"Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt"},
-{"Id":89,"CatId":2,"Cultureode":698,"Description_de":"Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt","Description_fr":"Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt","Description_it":"Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt"},
-{"Id":90,"CatId":2,"Cultureode":602,"Description_de":"Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)","Description_fr":"Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)","Description_it":"Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)"},
-{"Id":91,"CatId":2,"Cultureode":634,"Description_de":"Uferwiese (ohne Weiden) entlang von Fliessgewässern","Description_fr":"Uferwiese (ohne Weiden) entlang von Fliessgewässern","Description_it":"Uferwiese (ohne Weiden) entlang von Fliessgewässern"},
-{"Id":92,"CatId":2,"Cultureode":625,"Description_de":"Waldweiden (ohne bewaldete Fläche)","Description_fr":"Waldweiden (ohne bewaldete Fläche)","Description_it":"Waldweiden (ohne bewaldete Fläche)"},
-{"Id":93,"CatId":2,"Cultureode":618,"Description_de":"Waldweiden (ohne bewaldete Fläche) BFF","Description_fr":"Waldweiden (ohne bewaldete Fläche) BFF","Description_it":"Waldweiden (ohne bewaldete Fläche) BFF"},
-{"Id":94,"CatId":2,"Cultureode":619,"Description_de":"Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE","Description_fr":"Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE","Description_it":"Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE"},
-{"Id":95,"CatId":2,"Cultureode":616,"Description_de":"Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)","Description_fr":"Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)","Description_it":"Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)"},
-{"Id":96,"CatId":2,"Cultureode":612,"Description_de":"Wenig intensiv genutze Wiesen (ohne Weiden)","Description_fr":"Wenig intensiv genutze Wiesen (ohne Weiden)","Description_it":"Wenig intensiv genutze Wiesen (ohne Weiden)"},
-{"Id":97,"CatId":3,"Cultureode":731,"Description_de":"Andere Obstanlagen (Kiwis, Holunder, usw.)","Description_fr":"Andere Obstanlagen (Kiwis, Holunder, usw.)","Description_it":"Andere Obstanlagen (Kiwis, Holunder, usw.)"},
-{"Id":98,"CatId":3,"Cultureode":713,"Description_de":"Baumschule von Forstpflanzen ausserhalb der Forstzone","Description_fr":"Baumschule von Forstpflanzen ausserhalb der Forstzone","Description_it":"Baumschule von Forstpflanzen ausserhalb der Forstzone"},
-{"Id":99,"CatId":3,"Cultureode":722,"Description_de":"Baumschule von Reben","Description_fr":"Baumschule von Reben","Description_it":"Baumschule von Reben"},
-{"Id":100,"CatId":3,"Cultureode":712,"Description_de":"Christbäume","Description_fr":"Christbäume","Description_it":"Christbäume"},
-{"Id":101,"CatId":3,"Cultureode":720,"Description_de":"Gepflegte Selven (Edelkastanienbäume)","Description_fr":"Gepflegte Selven (Edelkastanienbäume)","Description_it":"Gepflegte Selven (Edelkastanienbäume)"},
-{"Id":102,"CatId":3,"Cultureode":716,"Description_de":"Gepflegte Selven (Kastanien-/Nussbäume)","Description_fr":"Gepflegte Selven (Kastanien-/Nussbäume)","Description_it":"Gepflegte Selven (Kastanien-/Nussbäume)"},
-{"Id":103,"CatId":3,"Cultureode":708,"Description_de":"Hopfen","Description_fr":"Hopfen","Description_it":"Hopfen"},
-{"Id":104,"CatId":3,"Cultureode":719,"Description_de":"Maulbeerbaumanlagen (Fütterung Seidenraupen)","Description_fr":"Maulbeerbaumanlagen (Fütterung Seidenraupen)","Description_it":"Maulbeerbaumanlagen (Fütterung Seidenraupen)"},
-{"Id":105,"CatId":3,"Cultureode":705,"Description_de":"Mehrjährige Beeren","Description_fr":"Mehrjährige Beeren","Description_it":"Mehrjährige Beeren"},
-{"Id":106,"CatId":3,"Cultureode":721,"Description_de":"Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)","Description_fr":"Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)","Description_it":"Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)"},
-{"Id":107,"CatId":3,"Cultureode":706,"Description_de":"Mehrjährige Gewürz- und Medizinalpflanzen","Description_fr":"Mehrjährige Gewürz- und Medizinalpflanzen","Description_it":"Mehrjährige Gewürz- und Medizinalpflanzen"},
-{"Id":108,"CatId":3,"Cultureode":707,"Description_de":"Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)","Description_fr":"Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)","Description_it":"Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)"},
-{"Id":109,"CatId":3,"Cultureode":702,"Description_de":"Obstanlagen (Äpfel)","Description_fr":"Obstanlagen (Äpfel)","Description_it":"Obstanlagen (Äpfel)"},
-{"Id":110,"CatId":3,"Cultureode":703,"Description_de":"Obstanlagen (Birnen)","Description_fr":"Obstanlagen (Birnen)","Description_it":"Obstanlagen (Birnen)"},
-{"Id":111,"CatId":3,"Cultureode":704,"Description_de":"Obstanlagen (Steinobst)","Description_fr":"Obstanlagen (Steinobst)","Description_it":"Obstanlagen (Steinobst)"},
-{"Id":112,"CatId":3,"Cultureode":725,"Description_de":"Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)","Description_fr":"Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)","Description_it":"Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)"},
-{"Id":113,"CatId":3,"Cultureode":711,"Description_de":"Pilze (Freiland)","Description_fr":"Pilze (Freiland)","Description_it":"Pilze (Freiland)"},
-{"Id":114,"CatId":3,"Cultureode":701,"Description_de":"Reben","Description_fr":"Reben","Description_it":"Reben"},
-{"Id":115,"CatId":3,"Cultureode":735,"Description_de":"Reben (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Reben (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Reben (regionsspezifische Biodiversitätsförderfläche)"},
-{"Id":116,"CatId":3,"Cultureode":717,"Description_de":"Rebflächen mit natürlicher Artenvielfalt","Description_fr":"Rebflächen mit natürlicher Artenvielfalt","Description_it":"Rebflächen mit natürlicher Artenvielfalt"},
-{"Id":117,"CatId":3,"Cultureode":709,"Description_de":"Rhabarber","Description_fr":"Rhabarber","Description_it":"Rhabarber"},
-{"Id":118,"CatId":3,"Cultureode":710,"Description_de":"Spargel","Description_fr":"Spargel","Description_it":"Spargel"},
-{"Id":119,"CatId":3,"Cultureode":718,"Description_de":"Trüffelanlagen","Description_fr":"Trüffelanlagen","Description_it":"Trüffelanlagen"},
-{"Id":120,"CatId":3,"Cultureode":715,"Description_de":"Übrige Baumschulen (Rosen, Früchte, usw.)","Description_fr":"Übrige Baumschulen (Rosen, Früchte, usw.)","Description_it":"Übrige Baumschulen (Rosen, Früchte, usw.)"},
-{"Id":121,"CatId":3,"Cultureode":797,"Description_de":"Übrige Flächen mit Dauerkulturen, beitragsberechtigt","Description_fr":"Übrige Flächen mit Dauerkulturen, beitragsberechtigt","Description_it":"Übrige Flächen mit Dauerkulturen, beitragsberechtigt"},
-{"Id":122,"CatId":3,"Cultureode":798,"Description_de":"Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt","Description_fr":"Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt","Description_it":"Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt"},
-{"Id":123,"CatId":3,"Cultureode":714,"Description_de":"Ziersträucher, Ziergehölze und Zierstauden","Description_fr":"Ziersträucher, Ziergehölze und Zierstauden","Description_it":"Ziersträucher, Ziergehölze und Zierstauden"},
-{"Id":124,"CatId":4,"Cultureode":808,"Description_de":"Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament","Description_fr":"Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament","Description_it":"Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament"},
-{"Id":125,"CatId":4,"Cultureode":803,"Description_de":"Gärtnerische Kulturen in Gewächshäusern mit festem Fundament","Description_fr":"Gärtnerische Kulturen in Gewächshäusern mit festem Fundament","Description_it":"Gärtnerische Kulturen in Gewächshäusern mit festem Fundament"},
-{"Id":126,"CatId":4,"Cultureode":806,"Description_de":"Gemüsekulturen in geschütztem Anbau ohne festes Fundament","Description_fr":"Gemüsekulturen in geschütztem Anbau ohne festes Fundament","Description_it":"Gemüsekulturen in geschütztem Anbau ohne festes Fundament"},
-{"Id":127,"CatId":4,"Cultureode":801,"Description_de":"Gemüsekulturen in Gewächshäusern mit festem Fundament","Description_fr":"Gemüsekulturen in Gewächshäusern mit festem Fundament","Description_it":"Gemüsekulturen in Gewächshäusern mit festem Fundament"},
-{"Id":128,"CatId":4,"Cultureode":810,"Description_de":"Pilze in geschütztem Anbau mit festem Fundament","Description_fr":"Pilze in geschütztem Anbau mit festem Fundament","Description_it":"Pilze in geschütztem Anbau mit festem Fundament"},
-{"Id":129,"CatId":4,"Cultureode":848,"Description_de":"Übrige Kulturen in geschützem Anbau mit festem Fundament","Description_fr":"Übrige Kulturen in geschützem Anbau mit festem Fundament","Description_it":"Übrige Kulturen in geschützem Anbau mit festem Fundament"},
-{"Id":130,"CatId":4,"Cultureode":847,"Description_de":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt","Description_fr":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt","Description_it":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt"},
-{"Id":131,"CatId":4,"Cultureode":849,"Description_de":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt","Description_fr":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt","Description_it":"Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt"},
-{"Id":132,"CatId":4,"Cultureode":807,"Description_de":"Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament","Description_fr":"Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament","Description_it":"Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament"},
-{"Id":133,"CatId":4,"Cultureode":802,"Description_de":"Übrige Spezialkulturen in Gewächshäusern mit festem Fundament","Description_fr":"Übrige Spezialkulturen in Gewächshäusern mit festem Fundament","Description_it":"Übrige Spezialkulturen in Gewächshäusern mit festem Fundament"},
-{"Id":134,"CatId":5,"Cultureode":852,"Description_de":"Hecken-, Feld- und Ufergehölze (mit Krautsaum)","Description_fr":"Hecken-, Feld- und Ufergehölze (mit Krautsaum)","Description_it":"Hecken-, Feld- und Ufergehölze (mit Krautsaum)"},
-{"Id":135,"CatId":5,"Cultureode":858,"Description_de":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)"},
-{"Id":136,"CatId":5,"Cultureode":857,"Description_de":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)","Description_fr":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)","Description_it":"Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)"},
-{"Id":137,"CatId":5,"Cultureode":851,"Description_de":"Streueflächen innerhalb der LN","Description_fr":"Streueflächen innerhalb der LN","Description_it":"Streueflächen innerhalb der LN"},
-{"Id":138,"CatId":5,"Cultureode":897,"Description_de":"übrige Flächen innerhalb der LN, beitragsberechtigt","Description_fr":"übrige Flächen innerhalb der LN, beitragsberechtigt","Description_it":"übrige Flächen innerhalb der LN, beitragsberechtigt"},
-{"Id":139,"CatId":5,"Cultureode":895,"Description_de":"Übrige Flächen innerhalb der LN, beitragsberechtigt","Description_fr":"Übrige Flächen innerhalb der LN, beitragsberechtigt","Description_it":"Übrige Flächen innerhalb der LN, beitragsberechtigt"},
-{"Id":140,"CatId":5,"Cultureode":898,"Description_de":"Übrige Flächen innerhalb der LN, nicht beitragsberechtigt","Description_fr":"Übrige Flächen innerhalb der LN, nicht beitragsberechtigt","Description_it":"Übrige Flächen innerhalb der LN, nicht beitragsberechtigt"},
-{"Id":141,"CatId":6,"Cultureode":926,"Description_de":"Andere Bäume","Description_fr":"Andere Bäume","Description_it":"Andere Bäume"},
-{"Id":142,"CatId":6,"Cultureode":927,"Description_de":"Andere Bäume (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Andere Bäume (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Andere Bäume (regionsspezifische Biodiversitätsförderfläche)"},
-{"Id":143,"CatId":6,"Cultureode":923,"Description_de":"Edelkastanienbäume","Description_fr":"Edelkastanienbäume","Description_it":"Edelkastanienbäume"},
-{"Id":144,"CatId":6,"Cultureode":924,"Description_de":"Einheimische standortgerechte Einzelbäume und Alleen","Description_fr":"Einheimische standortgerechte Einzelbäume und Alleen","Description_it":"Einheimische standortgerechte Einzelbäume und Alleen"},
-{"Id":145,"CatId":6,"Cultureode":921,"Description_de":"Hochstammfeldobstbäume","Description_fr":"Hochstammfeldobstbäume","Description_it":"Hochstammfeldobstbäume"},
-{"Id":146,"CatId":6,"Cultureode":925,"Description_de":"Markante Einzelbäume","Description_fr":"Markante Einzelbäume","Description_it":"Markante Einzelbäume"},
-{"Id":147,"CatId":6,"Cultureode":922,"Description_de":"Nussbäume","Description_fr":"Nussbäume","Description_it":"Nussbäume"},
-{"Id":148,"CatId":7,"Cultureode":929,"Description_de":"Andere Elemente (Landschaftsqualität)","Description_fr":"Andere Elemente (Landschaftsqualität)","Description_it":"Andere Elemente (Landschaftsqualität)"},
-{"Id":149,"CatId":7,"Cultureode":928,"Description_de":"Andere Elemente (regionsspezifische Biodiversitätsförderfläche)","Description_fr":"Andere Elemente (regionsspezifische Biodiversitätsförderfläche)","Description_it":"Andere Elemente (regionsspezifische Biodiversitätsförderfläche)"}]
+[
+  {
+    "Id": 1,
+    "CatId": 1,
+    "Cultureode": 536,
+    "Description": {
+      "De": "Ackerbohnen zu Futterzwecken",
+      "Fr": "Ackerbohnen zu Futterzwecken",
+      "It": "Ackerbohnen zu Futterzwecken"
+    }
+  },
+  {
+    "Id": 2,
+    "CatId": 1,
+    "Cultureode": 555,
+    "Description": {
+      "De": "Ackerschonstreifen",
+      "Fr": "Ackerschonstreifen",
+      "It": "Ackerschonstreifen"
+    }
+  },
+  {
+    "Id": 3,
+    "CatId": 1,
+    "Cultureode": 565,
+    "Description": {
+      "De": "Ackerschonstreifen Getreide",
+      "Fr": "Ackerschonstreifen Getreide",
+      "It": "Ackerschonstreifen Getreide"
+    }
+  },
+  {
+    "Id": 4,
+    "CatId": 1,
+    "Cultureode": 571,
+    "Description": {
+      "De": "Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)",
+      "Fr": "Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)",
+      "It": "Ackerschonstreifen Körnerleguminosen (Ackerbohnen, Eiweisserbsen, Lupinen und Mischungen mit Code 569)"
+    }
+  },
+  {
+    "Id": 5,
+    "CatId": 1,
+    "Cultureode": 564,
+    "Description": {
+      "De": "Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)",
+      "Fr": "Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)",
+      "It": "Ackerschonstreifen Ölsaaten (Raps, Sonnenblumen, Lein)"
+    }
+  },
+  {
+    "Id": 6,
+    "CatId": 1,
+    "Cultureode": 577,
+    "Description": {
+      "De": "Anderer Hanf",
+      "Fr": "Anderer Hanf",
+      "It": "Anderer Hanf"
+    }
+  },
+  {
+    "Id": 7,
+    "CatId": 1,
+    "Cultureode": 572,
+    "Description": {
+      "De": "Blühstreifen für Bestäuber und andere Nützlinge",
+      "Fr": "Blühstreifen für Bestäuber und andere Nützlinge",
+      "It": "Blühstreifen für Bestäuber und andere Nützlinge"
+    }
+  },
+  {
+    "Id": 8,
+    "CatId": 1,
+    "Cultureode": 548,
+    "Description": {
+      "De": "Buchweizen",
+      "Fr": "Buchweizen",
+      "It": "Buchweizen"
+    }
+  },
+  {
+    "Id": 9,
+    "CatId": 1,
+    "Cultureode": 556,
+    "Description": {
+      "De": "Buntbrache",
+      "Fr": "Buntbrache",
+      "It": "Buntbrache"
+    }
+  },
+  {
+    "Id": 10,
+    "CatId": 1,
+    "Cultureode": 516,
+    "Description": {
+      "De": "Dinkel",
+      "Fr": "Dinkel",
+      "It": "Dinkel"
+    }
+  },
+  {
+    "Id": 11,
+    "CatId": 1,
+    "Cultureode": 551,
+    "Description": {
+      "De": "Einjährige Beeren (z.B. Erdbeeren)",
+      "Fr": "Einjährige Beeren (z.B. Erdbeeren)",
+      "It": "Einjährige Beeren (z.B. Erdbeeren)"
+    }
+  },
+  {
+    "Id": 12,
+    "CatId": 1,
+    "Cultureode": 545,
+    "Description": {
+      "De": "Einjährige Freilandgemüse (ohne Konservengemüse)",
+      "Fr": "Einjährige Freilandgemüse (ohne Konservengemüse)",
+      "It": "Einjährige Freilandgemüse (ohne Konservengemüse)"
+    }
+  },
+  {
+    "Id": 13,
+    "CatId": 1,
+    "Cultureode": 554,
+    "Description": {
+      "De": "Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)",
+      "Fr": "Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)",
+      "It": "Einjährige gärtnerische Freilandkulturen (Blumen, Rollrasen, usw.)"
+    }
+  },
+  {
+    "Id": 14,
+    "CatId": 1,
+    "Cultureode": 553,
+    "Description": {
+      "De": "Einjährige Gewürz- und Medizinalpflanzen",
+      "Fr": "Einjährige Gewürz- und Medizinalpflanzen",
+      "It": "Einjährige Gewürz- und Medizinalpflanzen"
+    }
+  },
+  {
+    "Id": 15,
+    "CatId": 1,
+    "Cultureode": 552,
+    "Description": {
+      "De": "Einjährige nachwachsende Rohstoffe (Kenaf, usw.)",
+      "Fr": "Einjährige nachwachsende Rohstoffe (Kenaf, usw.)",
+      "It": "Einjährige nachwachsende Rohstoffe (Kenaf, usw.)"
+    }
+  },
+  {
+    "Id": 16,
+    "CatId": 1,
+    "Cultureode": 537,
+    "Description": {
+      "De": "Eiweisserbsen zu Futterzwecken",
+      "Fr": "Eiweisserbsen zu Futterzwecken",
+      "It": "Eiweisserbsen zu Futterzwecken"
+    }
+  },
+  {
+    "Id": 17,
+    "CatId": 1,
+    "Cultureode": 511,
+    "Description": {
+      "De": "Emmer, Einkorn",
+      "Fr": "Emmer, Einkorn",
+      "It": "Emmer, Einkorn"
+    }
+  },
+  {
+    "Id": 18,
+    "CatId": 1,
+    "Cultureode": 546,
+    "Description": {
+      "De": "Freiland-Konservengemüse",
+      "Fr": "Freiland-Konservengemüse",
+      "It": "Freiland-Konservengemüse"
+    }
+  },
+  {
+    "Id": 19,
+    "CatId": 1,
+    "Cultureode": 523,
+    "Description": {
+      "De": "Futterrüben",
+      "Fr": "Futterrüben",
+      "It": "Futterrüben"
+    }
+  },
+  {
+    "Id": 20,
+    "CatId": 1,
+    "Cultureode": 507,
+    "Description": {
+      "De": "Futterweizen gemäss Sortenliste swiss granum",
+      "Fr": "Futterweizen gemäss Sortenliste swiss granum",
+      "It": "Futterweizen gemäss Sortenliste swiss granum"
+    }
+  },
+  {
+    "Id": 21,
+    "CatId": 1,
+    "Cultureode": 517,
+    "Description": {
+      "De": "Getreide für die Saatgutproduktion",
+      "Fr": "Getreide für die Saatgutproduktion",
+      "It": "Getreide für die Saatgutproduktion"
+    }
+  },
+  {
+    "Id": 22,
+    "CatId": 1,
+    "Cultureode": 543,
+    "Description": {
+      "De": "Getreide siliert",
+      "Fr": "Getreide siliert",
+      "It": "Getreide siliert"
+    }
+  },
+  {
+    "Id": 23,
+    "CatId": 1,
+    "Cultureode": 558,
+    "Description": {
+      "De": "Grünbrache (nur 1999)",
+      "Fr": "Grünbrache (nur 1999)",
+      "It": "Grünbrache (nur 1999)"
+    }
+  },
+  {
+    "Id": 24,
+    "CatId": 1,
+    "Cultureode": 504,
+    "Description": {
+      "De": "Hafer",
+      "Fr": "Hafer",
+      "It": "Hafer"
+    }
+  },
+  {
+    "Id": 25,
+    "CatId": 1,
+    "Cultureode": 533,
+    "Description": {
+      "De": "Hanf (andere Sorten)",
+      "Fr": "Hanf (andere Sorten)",
+      "It": "Hanf (andere Sorten)"
+    }
+  },
+  {
+    "Id": 26,
+    "CatId": 1,
+    "Cultureode": 535,
+    "Description": {
+      "De": "Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)",
+      "Fr": "Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)",
+      "It": "Hanf (nur Sorten nach BLW- und EU-Sortenkatalog)"
+    }
+  },
+  {
+    "Id": 27,
+    "CatId": 1,
+    "Cultureode": 532,
+    "Description": {
+      "De": "Hanf (THC-arme Sorten nach BLW-Sortenliste)",
+      "Fr": "Hanf (THC-arme Sorten nach BLW-Sortenliste)",
+      "It": "Hanf (THC-arme Sorten nach BLW-Sortenliste)"
+    }
+  },
+  {
+    "Id": 28,
+    "CatId": 1,
+    "Cultureode": 576,
+    "Description": {
+      "De": "Hanf zur Fasernutzung",
+      "Fr": "Hanf zur Fasernutzung",
+      "It": "Hanf zur Fasernutzung"
+    }
+  },
+  {
+    "Id": 29,
+    "CatId": 1,
+    "Cultureode": 575,
+    "Description": {
+      "De": "Hanf zur Nutzung der Samen",
+      "Fr": "Hanf zur Nutzung der Samen",
+      "It": "Hanf zur Nutzung der Samen"
+    }
+  },
+  {
+    "Id": 30,
+    "CatId": 1,
+    "Cultureode": 542,
+    "Description": {
+      "De": "Hirse",
+      "Fr": "Hirse",
+      "It": "Hirse"
+    }
+  },
+  {
+    "Id": 31,
+    "CatId": 1,
+    "Cultureode": 524,
+    "Description": {
+      "De": "Kartoffeln",
+      "Fr": "Kartoffeln",
+      "It": "Kartoffeln"
+    }
+  },
+  {
+    "Id": 32,
+    "CatId": 1,
+    "Cultureode": 508,
+    "Description": {
+      "De": "Körnermais",
+      "Fr": "Körnermais",
+      "It": "Körnermais"
+    }
+  },
+  {
+    "Id": 33,
+    "CatId": 1,
+    "Cultureode": 534,
+    "Description": {
+      "De": "Lein",
+      "Fr": "Lein",
+      "It": "Lein"
+    }
+  },
+  {
+    "Id": 34,
+    "CatId": 1,
+    "Cultureode": 544,
+    "Description": {
+      "De": "Leindotter",
+      "Fr": "Leindotter",
+      "It": "Leindotter"
+    }
+  },
+  {
+    "Id": 35,
+    "CatId": 1,
+    "Cultureode": 568,
+    "Description": {
+      "De": "Linsen",
+      "Fr": "Linsen",
+      "It": "Linsen"
+    }
+  },
+  {
+    "Id": 36,
+    "CatId": 1,
+    "Cultureode": 538,
+    "Description": {
+      "De": "Lupinen zu Futterzwecken",
+      "Fr": "Lupinen zu Futterzwecken",
+      "It": "Lupinen zu Futterzwecken"
+    }
+  },
+  {
+    "Id": 37,
+    "CatId": 1,
+    "Cultureode": 515,
+    "Description": {
+      "De": "Mischel Brotgetreide",
+      "Fr": "Mischel Brotgetreide",
+      "It": "Mischel Brotgetreide"
+    }
+  },
+  {
+    "Id": 38,
+    "CatId": 1,
+    "Cultureode": 506,
+    "Description": {
+      "De": "Mischel Futtergetreide",
+      "Fr": "Mischel Futtergetreide",
+      "It": "Mischel Futtergetreide"
+    }
+  },
+  {
+    "Id": 39,
+    "CatId": 1,
+    "Cultureode": 569,
+    "Description": {
+      "De": "Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)",
+      "Fr": "Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)",
+      "It": "Mischungen von Ackerbohnen, Eiweisserbsen und Lupinen zu Futterzwecken mit Getreide, mindestens 30 % Anteil Leguminosen bei der Ernte (zur Körnergewinnung)"
+    }
+  },
+  {
+    "Id": 40,
+    "CatId": 1,
+    "Cultureode": 566,
+    "Description": {
+      "De": "Mohn",
+      "Fr": "Mohn",
+      "It": "Mohn"
+    }
+  },
+  {
+    "Id": 41,
+    "CatId": 1,
+    "Cultureode": 539,
+    "Description": {
+      "De": "Oelkürbisse",
+      "Fr": "Oelkürbisse",
+      "It": "Oelkürbisse"
+    }
+  },
+  {
+    "Id": 42,
+    "CatId": 1,
+    "Cultureode": 594,
+    "Description": {
+      "De": "Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Offene Ackerfläche, beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  },
+  {
+    "Id": 43,
+    "CatId": 1,
+    "Cultureode": 525,
+    "Description": {
+      "De": "Pflanzkartoffeln (Vertragsanbau)",
+      "Fr": "Pflanzkartoffeln (Vertragsanbau)",
+      "It": "Pflanzkartoffeln (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 44,
+    "CatId": 1,
+    "Cultureode": 562,
+    "Description": {
+      "De": "Phacelia für die Samenproduktion (Vertragsanbau)",
+      "Fr": "Phacelia für die Samenproduktion (Vertragsanbau)",
+      "It": "Phacelia für die Samenproduktion (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 45,
+    "CatId": 1,
+    "Cultureode": 574,
+    "Description": {
+      "De": "Quinoa",
+      "Fr": "Quinoa",
+      "It": "Quinoa"
+    }
+  },
+  {
+    "Id": 46,
+    "CatId": 1,
+    "Cultureode": 509,
+    "Description": {
+      "De": "Reis",
+      "Fr": "Reis",
+      "It": "Reis"
+    }
+  },
+  {
+    "Id": 47,
+    "CatId": 1,
+    "Cultureode": 514,
+    "Description": {
+      "De": "Roggen",
+      "Fr": "Roggen",
+      "It": "Roggen"
+    }
+  },
+  {
+    "Id": 48,
+    "CatId": 1,
+    "Cultureode": 557,
+    "Description": {
+      "De": "Rotationsbrache",
+      "Fr": "Rotationsbrache",
+      "It": "Rotationsbrache"
+    }
+  },
+  {
+    "Id": 49,
+    "CatId": 1,
+    "Cultureode": 561,
+    "Description": {
+      "De": "Rübsen für die Samenproduktion (Vertragsanbau)",
+      "Fr": "Rübsen für die Samenproduktion (Vertragsanbau)",
+      "It": "Rübsen für die Samenproduktion (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 50,
+    "CatId": 1,
+    "Cultureode": 519,
+    "Description": {
+      "De": "Saatmais (Vertragsanbau)",
+      "Fr": "Saatmais (Vertragsanbau)",
+      "It": "Saatmais (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 51,
+    "CatId": 1,
+    "Cultureode": 567,
+    "Description": {
+      "De": "Saflor",
+      "Fr": "Saflor",
+      "It": "Saflor"
+    }
+  },
+  {
+    "Id": 52,
+    "CatId": 1,
+    "Cultureode": 559,
+    "Description": {
+      "De": "Saum auf Ackerfläche",
+      "Fr": "Saum auf Ackerfläche",
+      "It": "Saum auf Ackerfläche"
+    }
+  },
+  {
+    "Id": 53,
+    "CatId": 1,
+    "Cultureode": 573,
+    "Description": {
+      "De": "Senf",
+      "Fr": "Senf",
+      "It": "Senf"
+    }
+  },
+  {
+    "Id": 54,
+    "CatId": 1,
+    "Cultureode": 521,
+    "Description": {
+      "De": "Silo- und Grünmais",
+      "Fr": "Silo- und Grünmais",
+      "It": "Silo- und Grünmais"
+    }
+  },
+  {
+    "Id": 55,
+    "CatId": 1,
+    "Cultureode": 528,
+    "Description": {
+      "De": "Soja",
+      "Fr": "Soja",
+      "It": "Soja"
+    }
+  },
+  {
+    "Id": 56,
+    "CatId": 1,
+    "Cultureode": 501,
+    "Description": {
+      "De": "Sommergerste",
+      "Fr": "Sommergerste",
+      "It": "Sommergerste"
+    }
+  },
+  {
+    "Id": 57,
+    "CatId": 1,
+    "Cultureode": 590,
+    "Description": {
+      "De": "Sommerraps als nachwachsender Rohstoff",
+      "Fr": "Sommerraps als nachwachsender Rohstoff",
+      "It": "Sommerraps als nachwachsender Rohstoff"
+    }
+  },
+  {
+    "Id": 58,
+    "CatId": 1,
+    "Cultureode": 526,
+    "Description": {
+      "De": "Sommerraps zur Speiseölgewinnung",
+      "Fr": "Sommerraps zur Speiseölgewinnung",
+      "It": "Sommerraps zur Speiseölgewinnung"
+    }
+  },
+  {
+    "Id": 59,
+    "CatId": 1,
+    "Cultureode": 512,
+    "Description": {
+      "De": "Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)",
+      "Fr": "Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)",
+      "It": "Sommerweizen (ohne Futterweizen der Sortenliste swiss granum)"
+    }
+  },
+  {
+    "Id": 60,
+    "CatId": 1,
+    "Cultureode": 592,
+    "Description": {
+      "De": "Sonnenblumen als nachwachsender Rohstoff",
+      "Fr": "Sonnenblumen als nachwachsender Rohstoff",
+      "It": "Sonnenblumen als nachwachsender Rohstoff"
+    }
+  },
+  {
+    "Id": 61,
+    "CatId": 1,
+    "Cultureode": 531,
+    "Description": {
+      "De": "Sonnenblumen zur Speiseölgewinnung",
+      "Fr": "Sonnenblumen zur Speiseölgewinnung",
+      "It": "Sonnenblumen zur Speiseölgewinnung"
+    }
+  },
+  {
+    "Id": 62,
+    "CatId": 1,
+    "Cultureode": 549,
+    "Description": {
+      "De": "Sorghum",
+      "Fr": "Sorghum",
+      "It": "Sorghum"
+    }
+  },
+  {
+    "Id": 63,
+    "CatId": 1,
+    "Cultureode": 541,
+    "Description": {
+      "De": "Tabak",
+      "Fr": "Tabak",
+      "It": "Tabak"
+    }
+  },
+  {
+    "Id": 64,
+    "CatId": 1,
+    "Cultureode": 505,
+    "Description": {
+      "De": "Triticale",
+      "Fr": "Triticale",
+      "It": "Triticale"
+    }
+  },
+  {
+    "Id": 65,
+    "CatId": 1,
+    "Cultureode": 563,
+    "Description": {
+      "De": "Übrige Kulturen für die Samenproduktion (Vertragsanbau)",
+      "Fr": "Übrige Kulturen für die Samenproduktion (Vertragsanbau)",
+      "It": "Übrige Kulturen für die Samenproduktion (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 66,
+    "CatId": 1,
+    "Cultureode": 597,
+    "Description": {
+      "De": "Übrige offene Ackerfläche, beitragsberechtigt",
+      "Fr": "Übrige offene Ackerfläche, beitragsberechtigt",
+      "It": "Übrige offene Ackerfläche, beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 67,
+    "CatId": 1,
+    "Cultureode": 598,
+    "Description": {
+      "De": "Übrige offene Ackerfläche, nicht beitragsberechtigt",
+      "Fr": "Übrige offene Ackerfläche, nicht beitragsberechtigt",
+      "It": "Übrige offene Ackerfläche, nicht beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 68,
+    "CatId": 1,
+    "Cultureode": 595,
+    "Description": {
+      "De": "Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Übrige offene Ackerfläche, nicht beitragsberechtigt (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  },
+  {
+    "Id": 69,
+    "CatId": 1,
+    "Cultureode": 502,
+    "Description": {
+      "De": "Wintergerste",
+      "Fr": "Wintergerste",
+      "It": "Wintergerste"
+    }
+  },
+  {
+    "Id": 70,
+    "CatId": 1,
+    "Cultureode": 591,
+    "Description": {
+      "De": "Winterraps als nachwachsender Rohstoff",
+      "Fr": "Winterraps als nachwachsender Rohstoff",
+      "It": "Winterraps als nachwachsender Rohstoff"
+    }
+  },
+  {
+    "Id": 71,
+    "CatId": 1,
+    "Cultureode": 527,
+    "Description": {
+      "De": "Winterraps zur Speiseölgewinnung",
+      "Fr": "Winterraps zur Speiseölgewinnung",
+      "It": "Winterraps zur Speiseölgewinnung"
+    }
+  },
+  {
+    "Id": 72,
+    "CatId": 1,
+    "Cultureode": 513,
+    "Description": {
+      "De": "Winterweizen (ohne Futterweizen der Sortenliste swiss granum)",
+      "Fr": "Winterweizen (ohne Futterweizen der Sortenliste swiss granum)",
+      "It": "Winterweizen (ohne Futterweizen der Sortenliste swiss granum)"
+    }
+  },
+  {
+    "Id": 73,
+    "CatId": 1,
+    "Cultureode": 547,
+    "Description": {
+      "De": "Wurzeln der Treibzichorie",
+      "Fr": "Wurzeln der Treibzichorie",
+      "It": "Wurzeln der Treibzichorie"
+    }
+  },
+  {
+    "Id": 74,
+    "CatId": 1,
+    "Cultureode": 522,
+    "Description": {
+      "De": "Zuckerrüben",
+      "Fr": "Zuckerrüben",
+      "It": "Zuckerrüben"
+    }
+  },
+  {
+    "Id": 75,
+    "CatId": 2,
+    "Cultureode": 617,
+    "Description": {
+      "De": "Extensiv genutzte Weiden",
+      "Fr": "Extensiv genutzte Weiden",
+      "It": "Extensiv genutzte Weiden"
+    }
+  },
+  {
+    "Id": 76,
+    "CatId": 2,
+    "Cultureode": 611,
+    "Description": {
+      "De": "Extensiv genutzte Wiesen (ohne Weiden)",
+      "Fr": "Extensiv genutzte Wiesen (ohne Weiden)",
+      "It": "Extensiv genutzte Wiesen (ohne Weiden)"
+    }
+  },
+  {
+    "Id": 77,
+    "CatId": 2,
+    "Cultureode": 632,
+    "Description": {
+      "De": "Futtergräser für die Samenproduktion (Vertragsanbau)",
+      "Fr": "Futtergräser für die Samenproduktion (Vertragsanbau)",
+      "It": "Futtergräser für die Samenproduktion (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 78,
+    "CatId": 2,
+    "Cultureode": 631,
+    "Description": {
+      "De": "Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)",
+      "Fr": "Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)",
+      "It": "Futterleguminosen für die Samenproduktion (Vertragsanbau) (Rot-/Weissklee, Luzerne, Esparsette)"
+    }
+  },
+  {
+    "Id": 79,
+    "CatId": 2,
+    "Cultureode": 622,
+    "Description": {
+      "De": "Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese",
+      "Fr": "Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese",
+      "It": "Heuwiesen im Sömmerungsgebiet, Typ extensiv genutzte Wiese"
+    }
+  },
+  {
+    "Id": 80,
+    "CatId": 2,
+    "Cultureode": 623,
+    "Description": {
+      "De": "Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese",
+      "Fr": "Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese",
+      "It": "Heuwiesen im Sömmerungsgebiet, Typ wenig intensiv genutzte Wiese"
+    }
+  },
+  {
+    "Id": 81,
+    "CatId": 2,
+    "Cultureode": 621,
+    "Description": {
+      "De": "Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)",
+      "Fr": "Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)",
+      "It": "Heuwiesen im Sömmerungsgebiet, Übrige Wiesen (keine BFF)"
+    }
+  },
+  {
+    "Id": 82,
+    "CatId": 2,
+    "Cultureode": 601,
+    "Description": {
+      "De": "Kunstwiesen (ohne Weiden)",
+      "Fr": "Kunstwiesen (ohne Weiden)",
+      "It": "Kunstwiesen (ohne Weiden)"
+    }
+  },
+  {
+    "Id": 83,
+    "CatId": 2,
+    "Cultureode": 695,
+    "Description": {
+      "De": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche)",
+      "Fr": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche)",
+      "It": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche)"
+    }
+  },
+  {
+    "Id": 84,
+    "CatId": 2,
+    "Cultureode": 694,
+    "Description": {
+      "De": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)",
+      "Fr": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)",
+      "It": "Regionsspezifische Biodiversitätsförderfläche (Grünfläche ohne Weiden)"
+    }
+  },
+  {
+    "Id": 85,
+    "CatId": 2,
+    "Cultureode": 693,
+    "Description": {
+      "De": "Regionsspezifische Biodiversitätsförderfläche (Weiden)",
+      "Fr": "Regionsspezifische Biodiversitätsförderfläche (Weiden)",
+      "It": "Regionsspezifische Biodiversitätsförderfläche (Weiden)"
+    }
+  },
+  {
+    "Id": 86,
+    "CatId": 2,
+    "Cultureode": 613,
+    "Description": {
+      "De": "Übrige Dauerwiesen (ohne Weiden)",
+      "Fr": "Übrige Dauerwiesen (ohne Weiden)",
+      "It": "Übrige Dauerwiesen (ohne Weiden)"
+    }
+  },
+  {
+    "Id": 87,
+    "CatId": 2,
+    "Cultureode": 633,
+    "Description": {
+      "De": "Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)",
+      "Fr": "Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)",
+      "It": "Übrige Futterpflanzen für die Samenproduktion (Vertragsanbau)"
+    }
+  },
+  {
+    "Id": 88,
+    "CatId": 2,
+    "Cultureode": 697,
+    "Description": {
+      "De": "Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt",
+      "Fr": "Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt",
+      "It": "Übrige Grünfläche (Dauergrünfläche), beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 89,
+    "CatId": 2,
+    "Cultureode": 698,
+    "Description": {
+      "De": "Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt",
+      "Fr": "Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt",
+      "It": "Übrige Grünfläche (Dauergrünfläche), nicht beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 90,
+    "CatId": 2,
+    "Cultureode": 602,
+    "Description": {
+      "De": "Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)",
+      "Fr": "Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)",
+      "It": "Übrige Kunstwiese, beitragsberechtigt (z.B. Schweineweide, Geflügelweide)"
+    }
+  },
+  {
+    "Id": 91,
+    "CatId": 2,
+    "Cultureode": 634,
+    "Description": {
+      "De": "Uferwiese (ohne Weiden) entlang von Fliessgewässern",
+      "Fr": "Uferwiese (ohne Weiden) entlang von Fliessgewässern",
+      "It": "Uferwiese (ohne Weiden) entlang von Fliessgewässern"
+    }
+  },
+  {
+    "Id": 92,
+    "CatId": 2,
+    "Cultureode": 625,
+    "Description": {
+      "De": "Waldweiden (ohne bewaldete Fläche)",
+      "Fr": "Waldweiden (ohne bewaldete Fläche)",
+      "It": "Waldweiden (ohne bewaldete Fläche)"
+    }
+  },
+  {
+    "Id": 93,
+    "CatId": 2,
+    "Cultureode": 618,
+    "Description": {
+      "De": "Waldweiden (ohne bewaldete Fläche) BFF",
+      "Fr": "Waldweiden (ohne bewaldete Fläche) BFF",
+      "It": "Waldweiden (ohne bewaldete Fläche) BFF"
+    }
+  },
+  {
+    "Id": 94,
+    "CatId": 2,
+    "Cultureode": 619,
+    "Description": {
+      "De": "Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE",
+      "Fr": "Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE",
+      "It": "Weiden für Schweine, nicht anrechenbar für die Berechnung der RGVE"
+    }
+  },
+  {
+    "Id": 95,
+    "CatId": 2,
+    "Cultureode": 616,
+    "Description": {
+      "De": "Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)",
+      "Fr": "Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)",
+      "It": "Weiden (Heimweiden, übrige Weiden ohne Sömmerungsweiden)"
+    }
+  },
+  {
+    "Id": 96,
+    "CatId": 2,
+    "Cultureode": 612,
+    "Description": {
+      "De": "Wenig intensiv genutze Wiesen (ohne Weiden)",
+      "Fr": "Wenig intensiv genutze Wiesen (ohne Weiden)",
+      "It": "Wenig intensiv genutze Wiesen (ohne Weiden)"
+    }
+  },
+  {
+    "Id": 97,
+    "CatId": 3,
+    "Cultureode": 731,
+    "Description": {
+      "De": "Andere Obstanlagen (Kiwis, Holunder, usw.)",
+      "Fr": "Andere Obstanlagen (Kiwis, Holunder, usw.)",
+      "It": "Andere Obstanlagen (Kiwis, Holunder, usw.)"
+    }
+  },
+  {
+    "Id": 98,
+    "CatId": 3,
+    "Cultureode": 713,
+    "Description": {
+      "De": "Baumschule von Forstpflanzen ausserhalb der Forstzone",
+      "Fr": "Baumschule von Forstpflanzen ausserhalb der Forstzone",
+      "It": "Baumschule von Forstpflanzen ausserhalb der Forstzone"
+    }
+  },
+  {
+    "Id": 99,
+    "CatId": 3,
+    "Cultureode": 722,
+    "Description": {
+      "De": "Baumschule von Reben",
+      "Fr": "Baumschule von Reben",
+      "It": "Baumschule von Reben"
+    }
+  },
+  {
+    "Id": 100,
+    "CatId": 3,
+    "Cultureode": 712,
+    "Description": {
+      "De": "Christbäume",
+      "Fr": "Christbäume",
+      "It": "Christbäume"
+    }
+  },
+  {
+    "Id": 101,
+    "CatId": 3,
+    "Cultureode": 720,
+    "Description": {
+      "De": "Gepflegte Selven (Edelkastanienbäume)",
+      "Fr": "Gepflegte Selven (Edelkastanienbäume)",
+      "It": "Gepflegte Selven (Edelkastanienbäume)"
+    }
+  },
+  {
+    "Id": 102,
+    "CatId": 3,
+    "Cultureode": 716,
+    "Description": {
+      "De": "Gepflegte Selven (Kastanien-/Nussbäume)",
+      "Fr": "Gepflegte Selven (Kastanien-/Nussbäume)",
+      "It": "Gepflegte Selven (Kastanien-/Nussbäume)"
+    }
+  },
+  {
+    "Id": 103,
+    "CatId": 3,
+    "Cultureode": 708,
+    "Description": {
+      "De": "Hopfen",
+      "Fr": "Hopfen",
+      "It": "Hopfen"
+    }
+  },
+  {
+    "Id": 104,
+    "CatId": 3,
+    "Cultureode": 719,
+    "Description": {
+      "De": "Maulbeerbaumanlagen (Fütterung Seidenraupen)",
+      "Fr": "Maulbeerbaumanlagen (Fütterung Seidenraupen)",
+      "It": "Maulbeerbaumanlagen (Fütterung Seidenraupen)"
+    }
+  },
+  {
+    "Id": 105,
+    "CatId": 3,
+    "Cultureode": 705,
+    "Description": {
+      "De": "Mehrjährige Beeren",
+      "Fr": "Mehrjährige Beeren",
+      "It": "Mehrjährige Beeren"
+    }
+  },
+  {
+    "Id": 106,
+    "CatId": 3,
+    "Cultureode": 721,
+    "Description": {
+      "De": "Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)",
+      "Fr": "Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)",
+      "It": "Mehrjährige gärtnerische Freilandkulturen (nicht im Gewächshaus)"
+    }
+  },
+  {
+    "Id": 107,
+    "CatId": 3,
+    "Cultureode": 706,
+    "Description": {
+      "De": "Mehrjährige Gewürz- und Medizinalpflanzen",
+      "Fr": "Mehrjährige Gewürz- und Medizinalpflanzen",
+      "It": "Mehrjährige Gewürz- und Medizinalpflanzen"
+    }
+  },
+  {
+    "Id": 108,
+    "CatId": 3,
+    "Cultureode": 707,
+    "Description": {
+      "De": "Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)",
+      "Fr": "Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)",
+      "It": "Mehrjährige nachwachsende Rohstoffe (Chinaschilf, usw.)"
+    }
+  },
+  {
+    "Id": 109,
+    "CatId": 3,
+    "Cultureode": 702,
+    "Description": {
+      "De": "Obstanlagen (Äpfel)",
+      "Fr": "Obstanlagen (Äpfel)",
+      "It": "Obstanlagen (Äpfel)"
+    }
+  },
+  {
+    "Id": 110,
+    "CatId": 3,
+    "Cultureode": 703,
+    "Description": {
+      "De": "Obstanlagen (Birnen)",
+      "Fr": "Obstanlagen (Birnen)",
+      "It": "Obstanlagen (Birnen)"
+    }
+  },
+  {
+    "Id": 111,
+    "CatId": 3,
+    "Cultureode": 704,
+    "Description": {
+      "De": "Obstanlagen (Steinobst)",
+      "Fr": "Obstanlagen (Steinobst)",
+      "It": "Obstanlagen (Steinobst)"
+    }
+  },
+  {
+    "Id": 112,
+    "CatId": 3,
+    "Cultureode": 725,
+    "Description": {
+      "De": "Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)",
+      "Fr": "Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)",
+      "It": "Permakultur (kleinräumige Mischung verschiedener Kulturen mit mehr als 50% Spezialkulturen)"
+    }
+  },
+  {
+    "Id": 113,
+    "CatId": 3,
+    "Cultureode": 711,
+    "Description": {
+      "De": "Pilze (Freiland)",
+      "Fr": "Pilze (Freiland)",
+      "It": "Pilze (Freiland)"
+    }
+  },
+  {
+    "Id": 114,
+    "CatId": 3,
+    "Cultureode": 701,
+    "Description": {
+      "De": "Reben",
+      "Fr": "Reben",
+      "It": "Reben"
+    }
+  },
+  {
+    "Id": 115,
+    "CatId": 3,
+    "Cultureode": 735,
+    "Description": {
+      "De": "Reben (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Reben (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Reben (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  },
+  {
+    "Id": 116,
+    "CatId": 3,
+    "Cultureode": 717,
+    "Description": {
+      "De": "Rebflächen mit natürlicher Artenvielfalt",
+      "Fr": "Rebflächen mit natürlicher Artenvielfalt",
+      "It": "Rebflächen mit natürlicher Artenvielfalt"
+    }
+  },
+  {
+    "Id": 117,
+    "CatId": 3,
+    "Cultureode": 709,
+    "Description": {
+      "De": "Rhabarber",
+      "Fr": "Rhabarber",
+      "It": "Rhabarber"
+    }
+  },
+  {
+    "Id": 118,
+    "CatId": 3,
+    "Cultureode": 710,
+    "Description": {
+      "De": "Spargel",
+      "Fr": "Spargel",
+      "It": "Spargel"
+    }
+  },
+  {
+    "Id": 119,
+    "CatId": 3,
+    "Cultureode": 718,
+    "Description": {
+      "De": "Trüffelanlagen",
+      "Fr": "Trüffelanlagen",
+      "It": "Trüffelanlagen"
+    }
+  },
+  {
+    "Id": 120,
+    "CatId": 3,
+    "Cultureode": 715,
+    "Description": {
+      "De": "Übrige Baumschulen (Rosen, Früchte, usw.)",
+      "Fr": "Übrige Baumschulen (Rosen, Früchte, usw.)",
+      "It": "Übrige Baumschulen (Rosen, Früchte, usw.)"
+    }
+  },
+  {
+    "Id": 121,
+    "CatId": 3,
+    "Cultureode": 797,
+    "Description": {
+      "De": "Übrige Flächen mit Dauerkulturen, beitragsberechtigt",
+      "Fr": "Übrige Flächen mit Dauerkulturen, beitragsberechtigt",
+      "It": "Übrige Flächen mit Dauerkulturen, beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 122,
+    "CatId": 3,
+    "Cultureode": 798,
+    "Description": {
+      "De": "Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt",
+      "Fr": "Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt",
+      "It": "Übrige Flächen mit Dauerkulturen, nicht beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 123,
+    "CatId": 3,
+    "Cultureode": 714,
+    "Description": {
+      "De": "Ziersträucher, Ziergehölze und Zierstauden",
+      "Fr": "Ziersträucher, Ziergehölze und Zierstauden",
+      "It": "Ziersträucher, Ziergehölze und Zierstauden"
+    }
+  },
+  {
+    "Id": 124,
+    "CatId": 4,
+    "Cultureode": 808,
+    "Description": {
+      "De": "Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament",
+      "Fr": "Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament",
+      "It": "Gärtnerische Kulturen in geschütztem Anbau ohne festes Fundament"
+    }
+  },
+  {
+    "Id": 125,
+    "CatId": 4,
+    "Cultureode": 803,
+    "Description": {
+      "De": "Gärtnerische Kulturen in Gewächshäusern mit festem Fundament",
+      "Fr": "Gärtnerische Kulturen in Gewächshäusern mit festem Fundament",
+      "It": "Gärtnerische Kulturen in Gewächshäusern mit festem Fundament"
+    }
+  },
+  {
+    "Id": 126,
+    "CatId": 4,
+    "Cultureode": 806,
+    "Description": {
+      "De": "Gemüsekulturen in geschütztem Anbau ohne festes Fundament",
+      "Fr": "Gemüsekulturen in geschütztem Anbau ohne festes Fundament",
+      "It": "Gemüsekulturen in geschütztem Anbau ohne festes Fundament"
+    }
+  },
+  {
+    "Id": 127,
+    "CatId": 4,
+    "Cultureode": 801,
+    "Description": {
+      "De": "Gemüsekulturen in Gewächshäusern mit festem Fundament",
+      "Fr": "Gemüsekulturen in Gewächshäusern mit festem Fundament",
+      "It": "Gemüsekulturen in Gewächshäusern mit festem Fundament"
+    }
+  },
+  {
+    "Id": 128,
+    "CatId": 4,
+    "Cultureode": 810,
+    "Description": {
+      "De": "Pilze in geschütztem Anbau mit festem Fundament",
+      "Fr": "Pilze in geschütztem Anbau mit festem Fundament",
+      "It": "Pilze in geschütztem Anbau mit festem Fundament"
+    }
+  },
+  {
+    "Id": 129,
+    "CatId": 4,
+    "Cultureode": 848,
+    "Description": {
+      "De": "Übrige Kulturen in geschützem Anbau mit festem Fundament",
+      "Fr": "Übrige Kulturen in geschützem Anbau mit festem Fundament",
+      "It": "Übrige Kulturen in geschützem Anbau mit festem Fundament"
+    }
+  },
+  {
+    "Id": 130,
+    "CatId": 4,
+    "Cultureode": 847,
+    "Description": {
+      "De": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt",
+      "Fr": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt",
+      "It": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 131,
+    "CatId": 4,
+    "Cultureode": 849,
+    "Description": {
+      "De": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt",
+      "Fr": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt",
+      "It": "Übrige Kulturen in geschütztem Anbau ohne festes Fundament, nicht beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 132,
+    "CatId": 4,
+    "Cultureode": 807,
+    "Description": {
+      "De": "Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament",
+      "Fr": "Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament",
+      "It": "Übrige Spezialkulturen in geschütztem Anbau ohne festes Fundament"
+    }
+  },
+  {
+    "Id": 133,
+    "CatId": 4,
+    "Cultureode": 802,
+    "Description": {
+      "De": "Übrige Spezialkulturen in Gewächshäusern mit festem Fundament",
+      "Fr": "Übrige Spezialkulturen in Gewächshäusern mit festem Fundament",
+      "It": "Übrige Spezialkulturen in Gewächshäusern mit festem Fundament"
+    }
+  },
+  {
+    "Id": 134,
+    "CatId": 5,
+    "Cultureode": 852,
+    "Description": {
+      "De": "Hecken-, Feld- und Ufergehölze (mit Krautsaum)",
+      "Fr": "Hecken-, Feld- und Ufergehölze (mit Krautsaum)",
+      "It": "Hecken-, Feld- und Ufergehölze (mit Krautsaum)"
+    }
+  },
+  {
+    "Id": 135,
+    "CatId": 5,
+    "Cultureode": 858,
+    "Description": {
+      "De": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifen) (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  },
+  {
+    "Id": 136,
+    "CatId": 5,
+    "Cultureode": 857,
+    "Description": {
+      "De": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)",
+      "Fr": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)",
+      "It": "Hecken-, Feld- und Ufergehölze (mit Pufferstreifens)"
+    }
+  },
+  {
+    "Id": 137,
+    "CatId": 5,
+    "Cultureode": 851,
+    "Description": {
+      "De": "Streueflächen innerhalb der LN",
+      "Fr": "Streueflächen innerhalb der LN",
+      "It": "Streueflächen innerhalb der LN"
+    }
+  },
+  {
+    "Id": 138,
+    "CatId": 5,
+    "Cultureode": 897,
+    "Description": {
+      "De": "übrige Flächen innerhalb der LN, beitragsberechtigt",
+      "Fr": "übrige Flächen innerhalb der LN, beitragsberechtigt",
+      "It": "übrige Flächen innerhalb der LN, beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 139,
+    "CatId": 5,
+    "Cultureode": 895,
+    "Description": {
+      "De": "Übrige Flächen innerhalb der LN, beitragsberechtigt",
+      "Fr": "Übrige Flächen innerhalb der LN, beitragsberechtigt",
+      "It": "Übrige Flächen innerhalb der LN, beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 140,
+    "CatId": 5,
+    "Cultureode": 898,
+    "Description": {
+      "De": "Übrige Flächen innerhalb der LN, nicht beitragsberechtigt",
+      "Fr": "Übrige Flächen innerhalb der LN, nicht beitragsberechtigt",
+      "It": "Übrige Flächen innerhalb der LN, nicht beitragsberechtigt"
+    }
+  },
+  {
+    "Id": 141,
+    "CatId": 6,
+    "Cultureode": 926,
+    "Description": {
+      "De": "Andere Bäume",
+      "Fr": "Andere Bäume",
+      "It": "Andere Bäume"
+    }
+  },
+  {
+    "Id": 142,
+    "CatId": 6,
+    "Cultureode": 927,
+    "Description": {
+      "De": "Andere Bäume (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Andere Bäume (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Andere Bäume (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  },
+  {
+    "Id": 143,
+    "CatId": 6,
+    "Cultureode": 923,
+    "Description": {
+      "De": "Edelkastanienbäume",
+      "Fr": "Edelkastanienbäume",
+      "It": "Edelkastanienbäume"
+    }
+  },
+  {
+    "Id": 144,
+    "CatId": 6,
+    "Cultureode": 924,
+    "Description": {
+      "De": "Einheimische standortgerechte Einzelbäume und Alleen",
+      "Fr": "Einheimische standortgerechte Einzelbäume und Alleen",
+      "It": "Einheimische standortgerechte Einzelbäume und Alleen"
+    }
+  },
+  {
+    "Id": 145,
+    "CatId": 6,
+    "Cultureode": 921,
+    "Description": {
+      "De": "Hochstammfeldobstbäume",
+      "Fr": "Hochstammfeldobstbäume",
+      "It": "Hochstammfeldobstbäume"
+    }
+  },
+  {
+    "Id": 146,
+    "CatId": 6,
+    "Cultureode": 925,
+    "Description": {
+      "De": "Markante Einzelbäume",
+      "Fr": "Markante Einzelbäume",
+      "It": "Markante Einzelbäume"
+    }
+  },
+  {
+    "Id": 147,
+    "CatId": 6,
+    "Cultureode": 922,
+    "Description": {
+      "De": "Nussbäume",
+      "Fr": "Nussbäume",
+      "It": "Nussbäume"
+    }
+  },
+  {
+    "Id": 148,
+    "CatId": 7,
+    "Cultureode": 929,
+    "Description": {
+      "De": "Andere Elemente (Landschaftsqualität)",
+      "Fr": "Andere Elemente (Landschaftsqualität)",
+      "It": "Andere Elemente (Landschaftsqualität)"
+    }
+  },
+  {
+    "Id": 149,
+    "CatId": 7,
+    "Cultureode": 928,
+    "Description": {
+      "De": "Andere Elemente (regionsspezifische Biodiversitätsförderfläche)",
+      "Fr": "Andere Elemente (regionsspezifische Biodiversitätsförderfläche)",
+      "It": "Andere Elemente (regionsspezifische Biodiversitätsförderfläche)"
+    }
+  }
+]

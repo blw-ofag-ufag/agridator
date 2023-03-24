@@ -1,4 +1,5 @@
 using Agridator.Web.Data;
+using Agridator.Web.Mapping;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -23,7 +24,18 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddAutoMapper(typeof(CatalogMappingProfile).Assembly);
 
+// CORS configuration
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 
 var app = builder.Build();
@@ -59,6 +71,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseCors();
 
 
 app.MapControllerRoute(
