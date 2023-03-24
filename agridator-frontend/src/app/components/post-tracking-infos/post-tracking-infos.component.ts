@@ -54,22 +54,22 @@ export class PostTrackingInfosComponent  {
   }
 
   public onMapReady(map: google.maps.Map): void {
-    
+
     console.log("hey", map)
     this.map = map;
 
-    
-    const flightPlanCoordinates = [
-      { lat: 46.947975, lng: 7.447447 },
-      { lat: 46.9479732, lng: 7.4474413 },
-      { lat: 46.947974873, lng: 7.447445322 },
-      { lat: 46.9479751232232, lng: 7.447446821312 },
-      { lat: 46.947975013123123, lng: 7.4474469322 },
-    ];
-  
 
-    const flightPath = new google.maps.Polyline({
-      path: flightPlanCoordinates,
+    const flightPlanCoordinates = [
+      { lat: 46.947465, lng: 7.447447 },
+      { lat: 46.9479432, lng: 7.4474513 },
+      { lat: 46.947984813, lng: 7.447445322 },
+      { lat: 46.9479551234232, lng: 7.44742321312 },
+      { lat: 46.947975013123123, lng: 7.4473469322 },
+    ];
+
+
+    const flightPath = new google.maps.Polygon({
+      paths: [flightPlanCoordinates],
       geodesic: true, 
       strokeColor: "#FF0000",
       strokeOpacity: 1.0,
@@ -78,7 +78,11 @@ export class PostTrackingInfosComponent  {
     flightPath.setMap(map);
   }
 
-  
+  discardTrack()
+  {
+    this.router.navigate(["pre-tracking-infos"]);
+  }
+
   calculateCenter(points :any[])
   {
     let sumPos = { lat:0, long:0 }
@@ -94,10 +98,12 @@ export class PostTrackingInfosComponent  {
     return new google.maps.LatLng({lat: sumPos.lat, lng: sumPos.long}, true);
   }
 
-  moveToCalendar() 
+  moveToCalendar()
   {
     const feldkalenderArray = this.localStorageService.getFeldkalender();
     const feldkalenderDto = new FeldkalenderDto();
+    feldkalenderDto.config = this.config;
+    feldkalenderDto.points = this.points;
     feldkalenderArray.push(feldkalenderDto);
     this.localStorageService.setFeldkalender(feldkalenderArray);
     this.router.navigate(["/feldkalender"])
@@ -109,7 +115,7 @@ export class PostTrackingInfosComponent  {
     points.sort(function(a, b) {
       return a.lat - b.lat || a.lng - b.lng;
     });
-  
+
     // Find lower hull
     var lower = [];
     for (var i = 0; i < points.length; i++) {
@@ -118,7 +124,7 @@ export class PostTrackingInfosComponent  {
       }
       lower.push(points[i]);
     }
-  
+
     // Find upper hull
     var upper = [];
     for (var i = points.length - 1; i >= 0; i--) {
@@ -127,13 +133,42 @@ export class PostTrackingInfosComponent  {
       }
       upper.push(points[i]);
     }
-  
+
     // Concatenate and return hull
     return lower.slice(0, lower.length - 1).concat(upper.slice(0, upper.length - 1));
   }
-  
+
   // Compute cross product of vectors p1p2 and p2p3
   cross(p1:any, p2:any, p3:any) {
     return (p2.lat - p1.lat) * (p3.lng - p2.lng) - (p2.lng - p1.lng) * (p3.lat - p2.lat);
+  }
+
+  getFertilizerByKey(key:any)
+  {
+
+    return this.dataService.getFertilizier().find(o => o.id == key);
+  }
+
+  getPPP(key:any)
+  {
+    console.log(key,this.dataService.getPlantProtectionProducts())
+    return this.dataService.getPlantProtectionProducts().find(o => o.id == key);
+  }
+
+  getWorkByKey(key:any)
+  {
+    return this.dataService.getTypeOfWork().find(o => o.id == key);
+  }
+
+  getOwnedFieldByKey(key:any)
+  {
+
+    return this.dataService.getOwnedFields().find(o => o.key == key);
+  }
+
+  getCultureByKey(catId:any)
+  {
+    console.log(this.dataService.getCultures());
+    return this.dataService.getCultures().find(o => o.catId == catId);
   }
 }

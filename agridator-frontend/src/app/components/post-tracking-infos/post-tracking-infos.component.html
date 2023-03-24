@@ -10,36 +10,36 @@
 
 </style>
 
-<div>
+<div >
     <h1>{{'post-tracking.Records' | translate}}</h1> 
-    <div class="container">
+
+    <div class="form">
         <div>
-            <p class="thick">{{'pre-tracking.PlantsFields' | translate}}:</p>
-            <p style="margin-left: 5px;" >{{config?.field}}</p>
+            <p class="thick field field-header">{{'pre-tracking.PlantsFields' | translate}}:</p>
+            <p style="margin-left: 5px;" >{{ getOwnedFieldByKey(config?.field)?.value }}</p>
+        </div>
+        <div *ngIf="config?.fertilizer !== null">
+            <p class="thick field-header">{{'pre-tracking.Cultures' | translate}}:</p>
+            <p style="margin-left: 5px;" >{{ getCultureByKey(config?.fertilizer)?.description}}</p>
         </div>
 
-        <div>
-            <p class="thick">{{'pre-tracking.Fertilizer' | translate}}:</p>
-            <p style="margin-left: 5px;" >{{config?.fertilizer}}</p>
+        <div *ngIf="config?.fertilizer !== null">
+            <p class="thick field-header">{{'pre-tracking.Fertilizer' | translate}}:</p>
+            <p style="margin-left: 5px;" >{{ getFertilizerByKey(config?.fertilizer)?.description}}</p>
         </div>
 
-        <div>
-            <p class="thick">{{'pre-tracking.PlantProtection' | translate}}:</p>
-            <p style="margin-left: 5px;" >{{config?.plantProtectionProduct}}</p>
+        <div *ngIf="config?.plantProtectionProduct !== null">
+            <p class="thick field-header">{{'pre-tracking.PlantProtection' | translate}}:</p>
+            <p style="margin-left: 5px;" >{{ getPPP(config?.plantProtectionProduct)?.productName}}</p>
         </div>
-        
-        
-       
+
     </div>
-
-    <h2>Config</h2> 
-    {{config | json}}
+  
     <h2>Geo-Data</h2> 
     <google-map  width="100%"[center]="center" (mapInitialized)="onMapReady($event)" #map></google-map>
 
-
     <div class="nav-bar">
-        <button mat-raised-button color="primary" type="submit" style=" align-self: flex-end;" (click)="moveToCalendar()">{{'Button.Save' | translate}}</button>
+        <button mat-raised-button color="warn" type="button" style=" align-self: flex-start;" (click)="discardTrack()">{{'Button.Reset' | translate}}</button>
+        <button mat-raised-button color="primary" type="button" style=" align-self: flex-end;" (click)="moveToCalendar()">{{'Button.Save' | translate}}</button>
     </div>
-
 </div>

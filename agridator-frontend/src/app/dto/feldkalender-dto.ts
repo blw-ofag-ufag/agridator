@@ -1,4 +1,5 @@
 export class FeldkalenderDto {
-
-    todo = 'todo';
+    date = new Date();
+    config: any;
+    points: any[] = [];
 }
