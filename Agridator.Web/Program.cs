@@ -47,6 +47,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetService<ApplicationDbContext>();
+        context.Database.EnsureDeleted();
         if (context?.Database.GetPendingMigrations().Any() ?? false)
         {
             context.Database.EnsureDeleted();
