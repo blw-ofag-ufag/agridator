@@ -3,12 +3,10 @@
     public class MigratorService : IHostedService
     {
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<MigratorService> _logger;
 
-        public MigratorService(IServiceProvider serviceProvider, ILogger<MigratorService> logger)
+        public MigratorService(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
-            _logger = logger;
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -27,7 +25,7 @@
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred seeding the DB.");
+                //nope
             }
         }
 
