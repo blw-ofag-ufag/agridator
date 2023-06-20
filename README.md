@@ -10,4 +10,4 @@ git merge origin/main
 ng build --output-path ../docs --base-href /agridator/
 cp ../docs/index.html ../docs/404.html
 ```
-https://gerhardfurrer.github.io/agridator
+https://blw-ofag-ufag.github.io/agridator
